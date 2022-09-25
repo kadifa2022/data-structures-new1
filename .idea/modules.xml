@@ -3,12 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/data-structures-new1.iml" filepath="$PROJECT_DIR$/data-structures-new1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dsa-01-AlgortihmAnalysis/dsa-01-AlgortihmAnalysis.iml" filepath="$PROJECT_DIR$/dsa-01-AlgortihmAnalysis/dsa-01-AlgortihmAnalysis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dsa-02-Arrays/dsa-02-Arrays.iml" filepath="$PROJECT_DIR$/dsa-02-Arrays/dsa-02-Arrays.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dsa-03-CollectionsReview/dsa-03-CollectionsReview.iml" filepath="$PROJECT_DIR$/dsa-03-CollectionsReview/dsa-03-CollectionsReview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dsa-04-LinkedLists/dsa-04-LinkedLists.iml" filepath="$PROJECT_DIR$/dsa-04-LinkedLists/dsa-04-LinkedLists.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dsa-05-Stacks/dsa-05-Stacks.iml" filepath="$PROJECT_DIR$/dsa-05-Stacks/dsa-05-Stacks.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dsa-06-AlgorithmProblems/dsa-06-AlgorithmProblems.iml" filepath="$PROJECT_DIR$/dsa-06-AlgorithmProblems/dsa-06-AlgorithmProblems.iml" />
     </modules>
   </component>
 </project>
