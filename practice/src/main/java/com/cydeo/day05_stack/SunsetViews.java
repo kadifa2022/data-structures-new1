@@ -1,4 +1,4 @@
-package com.cydeo.day1_AlgorithmAnalysis;
+package com.cydeo.day05_stack;
 
 import java.util.ArrayList;
 
