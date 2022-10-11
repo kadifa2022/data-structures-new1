@@ -6,6 +6,10 @@ import java.util.Stack;
 
 public class ElementsGreaterThanRight {
     public static void main(String[] args) {
+        int[] arr = { 10, 4, 6, 3, 5 };
+      //  find(arr);
+
+        System.out.println(arr.length);
 
     }
 
