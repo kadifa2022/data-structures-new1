@@ -18,7 +18,7 @@ public class ElementsGreaterThanRight {
         //condition if arr=null && arr.length==0;
 
 
-        if (arr == null && arr.length == 0) {
+        if (arr == null || arr.length == 0) {
             return new ArrayList<>();
         }
             //create stack
