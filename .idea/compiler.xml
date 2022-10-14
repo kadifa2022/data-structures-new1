@@ -13,6 +13,7 @@
         <module name="dsa-01-AlgortihmAnalysis" />
         <module name="dsa-03-CollectionsReview" />
         <module name="dsa-04-LinkedLists" />
+        <module name="dsa-07-Queues" />
       </profile>
     </annotationProcessing>
   </component>
