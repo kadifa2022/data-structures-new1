@@ -2,21 +2,29 @@ package com.cydeo.linkedList;
 
 public class LinkedListDemo {
     public static void main(String[] args) {
-        Node node1= new Node(1);
-        Node node2= new Node(2);
-        Node node3= new Node(3);
-        Node node4= new Node(4);
+        Node node1 = new Node(1);
+        Node node2 = new Node(2);
+        Node node3 = new Node(3);
+        Node node4 = new Node(4);
 
-        node1.next=node2;
-        node2.next=node3;
-        node3.next=node4;
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
 
-        System.out.println(node1.id);
-        System.out.println(node1.next.id + " id of the second node");
-        System.out.println(node1.next.next.id+ " id is the third node");
-        System.out.println(node2.next.next.id + " id is the fourth node");
-        System.out.println("Next address is:" + node1.next);
+        System.out.println("Node1's address is: " + node1 + " Node1 next address is " + node1.next);
+        System.out.println("Node2's address is: " + node2 + " Node2 next address is " + node2.next);
+        System.out.println("Node3's address is: " + node3 + " Node3 next address is " + node3.next);
+        System.out.println("Node4's address is: " + node4 + " Node4 next address is " + node4.next);
+
+
+        Node current; //temp
+        Node head = node1;//assign
+        current = head;//beginning
+        while (current != null) {//iterating
+            System.out.println("Id of node is:" + current.id);
+            current = current.next;
+
+        }
 
     }
-
 }
