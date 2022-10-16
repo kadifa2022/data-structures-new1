@@ -14,7 +14,7 @@ public class MyQueue<T> {
     T peek(){
         return (T)front.value;
     }
-    void enqueue(T item){
+    void enqueue(T item){//add elements //added one element on the back
         QNode<T>node =new QNode<>(item);
         if(isEmpty())
             front = back=node;
@@ -24,22 +24,27 @@ public class MyQueue<T> {
         }
         size++;
     }
-    T dequeue(){
+    T dequeue(){ //removing first element from collection--front and back pointing to the null if we have only one element
+
         QNode frontNode;
+
         if(isEmpty()) throw  new NoSuchElementException();
-        if(front ==back){
-            frontNode =front;
+        //for one element in queue
+        if(front==back){ //we can assign also if is size==1//we have size()
+            frontNode=front;
             front=back=null;
-        }
+        }    //now i have more than one element
         else{
             frontNode=front;
-            front=front.next;//new node
+            front=front.next; //new node
         }
-        size--;//before returning value
-        return(T)frontNode.value;
+        size--;
+        //before returning value
+      return (T) frontNode.value;
     }
     int size(){
         return size;
     }
+    //methods: peek()-dequeue()-removing item -add() -isEmpty()-enqueue()-add method
 
 }
