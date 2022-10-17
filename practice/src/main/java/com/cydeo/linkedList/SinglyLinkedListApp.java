@@ -10,9 +10,9 @@ public class SinglyLinkedListApp {
             
         }
         myList.printNodes();
-        myList.deleteById(2);
+        myList.deleteById(9);
         myList.printNodes();
-        System.out.println("index of 8 :" + myList.indexOf(8));
+        System.out.println("index of 3 :" + myList.indexOf(3));
 
     }
 }
