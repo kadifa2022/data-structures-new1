@@ -56,6 +56,24 @@ public class MySinglyLinkedList {
         current=current.next;
     }
     }
+    int indexOf(int id) {
+        if (isEmpty()) return -1;
+        int pos=0;
+        //iterate through the list
+        Node current=head;       //set my current with the starting element
+
+        while(current!=null){
+            if(current.id==id) return pos;
+            pos++;
+            current=current.next;
+        }
+        return -1;
+    }
+/*
+1.Find the indexOf sn element and return it.//position
+2. if not found return -1.
+
+ */
 
 
 
