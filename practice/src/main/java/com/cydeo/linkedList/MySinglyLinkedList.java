@@ -25,34 +25,36 @@ public class MySinglyLinkedList {
     }
     void deleteById(int id){
         //check if is empty
-        if(isEmpty()) System.out.println("List is empty");
+        if(isEmpty()) System.out.println("List is empty!!!");
+
         //assign prev and current with the head
         Node prev=head;
         Node current=head;
+
         while(current!=null){
-            if(current.id ==id)//there is a match
+            if(current.id==id){//there is a match
                 //case1:head
                 if(current==head){
                     head=current.next;
                     current.next=null;
                 }
                 //case2:tail
-            else if(current ==tail){
+            else if(current==tail){
                 tail=prev;
                 prev.next=null;//ex-tail will be eligible for garbage collection
-
-                }
+            }
                 //case3: middle
             else{
                 prev.next=current.next;
                 current.next=null;//current will be eligible for garbage collection
                 }
                 //after deletion
-                size--;
+            size--;
         }
-        //move forward of the elements of the list
+          //move forward of the elements of the list
         prev=current;
         current=current.next;
+    }
     }
 
 
