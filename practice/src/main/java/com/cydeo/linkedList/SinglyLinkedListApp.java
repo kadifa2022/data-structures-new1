@@ -10,9 +10,12 @@ public class SinglyLinkedListApp {
             
         }
         myList.printNodes();
-        myList.deleteById(9);
+       // myList.deleteById(9);
+        System.out.println(" kth item from last:" + myList.getKthItemFromLast(3));
+        myList.removeKthItemFromLast(1);//this is for removing kth item from the list
         myList.printNodes();
-        System.out.println("index of 3 :" + myList.indexOf(3));
+       // System.out.println("index of 3 :" + myList.indexOf(3));
+
 
     }
 }
