@@ -9,6 +9,20 @@ public class MySinglyLinkedList {
         return head == null;
     }
 
+    void addFirst(int data){
+        //create a new node object from data
+        Node node= new Node(data);
+        //case!: list empty
+        if(isEmpty()){
+            head=tail=node;
+        }else{//case2: list is not empty
+        node.next=head;
+            head=node;
+        //increase size
+            }
+        size++;
+    }
+
     void add(int data) {
         //create a new object from data
 
