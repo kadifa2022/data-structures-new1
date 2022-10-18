@@ -22,6 +22,22 @@ public class MySinglyLinkedList {
             }
         size++;
     }
+    public int getKthItemFromLast(int k){
+        //create two pointers
+        Node ptr1= head;
+        Node ptr2=head;
+        //move ptr2 k-1 times
+        for (int i = 0; i < k-1; i++) {
+            ptr2=ptr2.next;
+        }
+        //move bth pointers until pr2 hits the last element
+        while(ptr2!=null){
+            ptr1=ptr1.next;
+            ptr2=ptr2.next;
+        }
+        //ptr1 is on the kth element
+        return ptr1.id;
+    }
 
     void add(int data) {
         //create a new object from data
