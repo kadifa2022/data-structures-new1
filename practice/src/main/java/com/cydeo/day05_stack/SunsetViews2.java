@@ -14,25 +14,31 @@ public class SunsetViews2 {
 
         //first we need stack
         Stack<Integer> stack =new Stack<>();
-        //by default EAST
-        int i=0;
-        int step=1;
-        //this part is for West
+
+   int i=0;
+    int step=1;
+
+     //   for (int j = 0; j < buildings.length-1; j++) {
+
+     //   }
+       // this part is for West
         if(direction.equalsIgnoreCase("West")) {
             i = buildings.length - 1;
-            step = -1;
-        }
-        while(i>=0 && i< buildings.length){
+          step = -1;
+     }
+     while(i>=0 && i< buildings.length){
+
             while(!stack.isEmpty() && buildings[i]>=buildings[stack.peek()]){
                 stack.pop();
             }
-            stack.push(i);
-            i+=step;
+
+        stack.push(i);
+        i+=step;
             //now i have stock with buildings index that can see sunset
-            if(direction.equalsIgnoreCase("West")) Collections.reverse(stack);
+         if(direction.equalsIgnoreCase("West")) Collections.reverse(stack);
 
-        }
+   }
 
-        return new ArrayList<>(stack);
+        return new ArrayList<Integer>(stack);
     }
 }
