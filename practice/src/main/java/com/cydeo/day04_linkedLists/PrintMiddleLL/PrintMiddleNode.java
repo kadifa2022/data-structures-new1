@@ -1,4 +1,4 @@
-package com.cydeo.day05_stack.PrintMiddleLL;
+package com.cydeo.day04_linkedLists.PrintMiddleLL;
 
 public class PrintMiddleNode {
     public static void main(String[] args) {
