@@ -3,7 +3,7 @@ package com.cydeo.day04_linkedLists.PrintMiddleLL;
 public class PrintMiddleNode {
     public static void main(String[] args) {
         MySinglyLinkedList sll= new MySinglyLinkedList();
-        for(int i=1; i<=6;i++){
+        for(int i=1; i<=9;i++){
             sll.add(i);
         }
         printMiddle(sll);
@@ -15,13 +15,14 @@ public class PrintMiddleNode {
         Node a = sll.head;
         Node b = sll.head;
         //iterate over the likedList
-       while(b !=sll.tail && b.next !=sll.tail){
+       while(b!=sll.tail && b.next!=sll.tail){
            a=a.next;//singe jump
            b=b.next.next; //double jump
        }
        if(b==sll.tail) System.out.println(a.id);
-       else System.out.println(a.id+","+b.id);
+       else System.out.println(a.id+","+ a.next.id);
 
     }
+
 
 }
