@@ -1,6 +1,7 @@
 package com.cydeo.day03_CollectionsReview;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListReview {
@@ -23,5 +24,14 @@ public class ArrayListReview {
             System.out.println(students.get(i));
 
         }
+
+        //2. Iterator
+        //Forward Iteration
+        System.out.println("Print with Iterator................................");
+        Iterator iter=students.listIterator();
+        while(iter.hasNext()){
+            System.out.println(iter.next());
+        }
+
     }
 }
