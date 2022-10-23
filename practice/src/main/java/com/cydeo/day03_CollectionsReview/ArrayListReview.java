@@ -36,7 +36,13 @@ public class ArrayListReview {
         //Backwards Iteration
         System.out.println("Printing backwards with iterator....................");
         while(((ListIterator<Student>)iter).hasPrevious()){
-            System.out.println(((ListIterator<Student>)iter).hasPrevious());
+            System.out.println(((ListIterator<Student>)iter).previous());
+        }
+
+        //Printing with for each loop
+        System.out.println("Printing with for_each loop");
+        for (Student s:students) {System.out.println(s);
+
         }
 
     }
