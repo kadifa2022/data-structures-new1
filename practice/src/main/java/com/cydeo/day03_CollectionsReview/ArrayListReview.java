@@ -3,6 +3,7 @@ package com.cydeo.day03_CollectionsReview;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class ArrayListReview {
     public static void main(String[] args) {
@@ -31,6 +32,11 @@ public class ArrayListReview {
         Iterator iter=students.listIterator();
         while(iter.hasNext()){
             System.out.println(iter.next());
+        }
+        //Backwards Iteration
+        System.out.println("Printing backwards with iterator....................");
+        while(((ListIterator<Student>)iter).hasPrevious()){
+            System.out.println(((ListIterator<Student>)iter).hasPrevious());
         }
 
     }
