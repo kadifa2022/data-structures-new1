@@ -12,9 +12,15 @@
         <module name="dsa-06-AlgorithmProblems" />
         <module name="dsa-01-AlgortihmAnalysis" />
         <module name="dsa-03-CollectionsReview" />
+        <module name="dsa-08-Trees" />
         <module name="dsa-04-LinkedLists" />
         <module name="dsa-07-Queues" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dsa-08-Trees" options="" />
+    </option>
   </component>
 </project>

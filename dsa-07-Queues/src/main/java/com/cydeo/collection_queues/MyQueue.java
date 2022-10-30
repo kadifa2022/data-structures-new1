@@ -46,5 +46,14 @@ public class MyQueue<T> {
         return size;
     }
     //methods: peek()-dequeue()-removing item -add() -isEmpty()-enqueue()-add method
+    void printQueue(){
+        if (isEmpty()) return;
+        QNode<T> current=front;
+        while (current!=null){
+            System.out.print(current.value);
+            if (current.next!=null) System.out.print(", ");
+            current=current.next;
+        }
+    }
 
 }
