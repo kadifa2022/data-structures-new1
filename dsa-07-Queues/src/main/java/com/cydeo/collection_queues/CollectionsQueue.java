@@ -17,6 +17,7 @@ public class CollectionsQueue {
         cq.add(3);
         System.out.println(cq.remove());
         System.out.println(cq.remove());
+        TreeMap<Integer, String> hmp=new TreeMap<>();
 
       //  HashMap<String, Integer> hashMap= new HashMap<>();
       //  TreeMap<String, Integer> treeMap=new TreeMap<>();
