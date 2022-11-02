@@ -5,7 +5,7 @@ public class VisualizeTree {
         if (root == null) {
             return;
         }
-        String prev_str = " ";
+        String prev_str = "   ";
         Trunk trunk = new Trunk(prev, prev_str);
 
         printTree(root.rightChild, trunk, true);
@@ -14,7 +14,7 @@ public class VisualizeTree {
             trunk.str = "———";
         } else if (isLeft) {
             trunk.str = ".———";
-            prev_str = "  |";
+            prev_str = "   |";
         } else {
             trunk.str = "`———";
             prev.str = prev_str;
@@ -25,7 +25,7 @@ public class VisualizeTree {
         if (prev != null) {
             prev.str = prev_str;
         }
-        trunk.str = "  |";
+        trunk.str = "   |";
         printTree(root.leftChild, trunk, false);
     }
 
