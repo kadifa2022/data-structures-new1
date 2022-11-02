@@ -36,9 +36,9 @@ public class MyTree {
 
     //PreOrderTraversal of the tree
     //Root -left-right
-    void preOrderTraversal(TNode root){
+    void preOrderTraversal(TNode root){//recursive methode
         if(root ==null) return;
-        System.out.print(root.value + ", ");
+        System.out.print(root.value+", ");
         preOrderTraversal(root.leftChild);
         preOrderTraversal(root.rightChild);
     }
@@ -52,18 +52,18 @@ public class MyTree {
         if(root==null) return;
         postOrderTraversal(root.leftChild);
         postOrderTraversal(root.rightChild);
-        System.out.print(root.value + ", ");
+        System.out.print(root.value+", ");
 
     }
     void levelOrderTraversal(){
         if(root==null) return;
         Queue<TNode> queue= new LinkedList<>();
-        queue.add(root);
-        while(!queue.isEmpty()){
-            TNode toVisit=queue.poll();
-            System.out.print(toVisit.value+ ", ");
-            if( toVisit.leftChild!=null) queue.add(toVisit.leftChild);
-            if(toVisit.rightChild!=null) queue.add(toVisit.rightChild);
+        queue.add(root);//add root to queue
+        while(!queue.isEmpty()){//queue is not empty
+            TNode toVisit=queue.poll();//mean front of element
+            System.out.print(toVisit.value+", ");//  print out and visit element
+            if( toVisit.leftChild!=null) queue.add(toVisit.leftChild);//check if we have a left child and put in queue
+            if(toVisit.rightChild!=null) queue.add(toVisit.rightChild);//check if we have a right child and put in queue
         }
     }
 
