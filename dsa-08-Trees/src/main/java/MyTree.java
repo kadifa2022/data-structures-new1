@@ -101,5 +101,14 @@ public class MyTree {
 
     }
 
+          int countLeaves(TNode root){//how to find  count of leaves node
+
+        if (root== null)return 0;
+        if (isLeaf(root)) return 1;
+        return countLeaves(root.leftChild) + countLeaves(root.rightChild);
+
+
+    }
+
 
 }
