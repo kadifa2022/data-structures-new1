@@ -1,4 +1,5 @@
 import com.sun.source.tree.WhileLoopTree;
+import org.w3c.dom.Node;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -77,11 +78,26 @@ public class MyTree {
         while (current!=null){
         if(value< current.value)current=current.leftChild; //branch left
         else if (value> current.value)  current=current.rightChild;
-        else return true;
 
+        else return true;
+        }
+        return false;
 
     }
-        return false;
+
+    public boolean isLeaf(TNode node){//leaf check
+        return node.leftChild==null && node.rightChild ==null;//if is correct return true
+    }
+
+   public  void printLeaves(TNode root){
+
+        if (root==null) return;
+        //perform visit on root
+       if(isLeaf(root)) System.out.print(root.value+ ", ");//just change order for traversal
+       //Recursively branch left subtree
+       printLeaves(root.leftChild);
+       printLeaves(root.rightChild);
+       //branch right subtree
 
     }
 
