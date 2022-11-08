@@ -1,3 +1,5 @@
+import com.sun.source.tree.WhileLoopTree;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -10,25 +12,28 @@ public class MyTree {
     void insert(int value) {//start with root with void
         TNode newNode = new TNode(value);//TN assign with value new TNode
 
-        if (root == null) {
+        if (root == null) {//if root is null //root is new node
             root = newNode;
             return;
         }
         TNode current = root;
-        while (true) {
+        while (true) {//compared value
             if (value <= current.value) {//value can  be less than value
+
                 if (current.leftChild == null) {//another check
                     // if left is null insert there!!
                     current.leftChild = newNode;
                     break;
-                }
+                }//if leftChild is notnull branch into left subtree
                 current = current.leftChild;//assign
             } else {//value is grater than current value
+
                 if (current.rightChild == null) {
                     //if right is null insert there!!
+
                     current.rightChild = newNode;//inserted child
                     break;
-                }
+                }//if leftChild is notnull branch into rightsubtree
                 current = current.rightChild;
             }
         }
@@ -37,14 +42,14 @@ public class MyTree {
     //PreOrderTraversal of the tree
     //Root -left-right
     void preOrderTraversal(TNode root){//recursive methode
-        if(root ==null) return;
-        System.out.print(root.value+", ");
-        preOrderTraversal(root.leftChild);
-        preOrderTraversal(root.rightChild);
+        if(root ==null) return;//termination
+        System.out.print(root.value+", ");//visit root
+        preOrderTraversal(root.leftChild);//operations visit left subtree
+        preOrderTraversal(root.rightChild);//visit tight subtree
     }
-    void inOrderTraversal(TNode root){
-        if(root==null)return;
-        inOrderTraversal(root.leftChild);
+    void inOrderTraversal(TNode root){//send root node
+        if(root==null)return;//terination
+        inOrderTraversal(root.leftChild);//go left until you find null
         System.out.print(root.value+", ");
         inOrderTraversal(root.rightChild);
     }
@@ -66,7 +71,19 @@ public class MyTree {
             if(toVisit.rightChild!=null) queue.add(toVisit.rightChild);//check if we have a right child and put in queue
         }
     }
+    public boolean contains(int value) {
+        if (root == null) return false;//starting from root
+        TNode current = root;
+        while (current!=null){
+        if(value< current.value)current=current.leftChild; //branch left
+        else if (value> current.value)  current=current.rightChild;
+        else return true;
 
+
+    }
+        return false;
+
+    }
 
 
 }
