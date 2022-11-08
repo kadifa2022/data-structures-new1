@@ -22,7 +22,8 @@ public class TreeApp {
 //        tree.levelOrderTraversal();
 //
 
-        System.out.println(tree.contains(88));//call three methode
+        System.out.println(tree.contains(8));//call three methode
+        tree.printLeaves(tree.root);
 
 
     }
