@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class TreeApp {
     public static void main(String[] args) {
 
@@ -22,10 +24,18 @@ public class TreeApp {
 //        tree.levelOrderTraversal();
 //
 
-        System.out.println(tree.contains(8));//call three methode
-        tree.printLeaves(tree.root);
+//        System.out.println(tree.contains(8));//call three methode
+//        tree.printLeaves(tree.root);
+//        System.out.println();
+//
 
+        tree.printLeaves(tree.root);
+        System.out.println();
+        System.out.println("Number of leaves:" + tree.countLeaves(tree.root));
+        System.out.println("Sum of leaf Nodes: " + tree.findSumOfLeaves(tree.root));
+        System.out.println(tree.height(tree.root));
 
     }
+
 
 }

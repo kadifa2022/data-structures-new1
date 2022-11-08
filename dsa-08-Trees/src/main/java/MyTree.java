@@ -104,10 +104,20 @@ public class MyTree {
           int countLeaves(TNode root){//how to find  count of leaves node
 
         if (root== null)return 0;
-        if (isLeaf(root)) return 1;
+        if (isLeaf(root)) return 1;//will be adding each call
+              //recursively left
         return countLeaves(root.leftChild) + countLeaves(root.rightChild);
 
-
+    }
+           int  findSumOfLeaves(TNode root){//recursively way
+               if (root== null)return 0;
+               if (isLeaf(root)) return root.value;
+               return findSumOfLeaves(root.leftChild) + findSumOfLeaves(root.rightChild);
+            }
+         int height(TNode root){
+        if(root==null) return -1;
+        if (isLeaf(root))return 0;
+        return 1+Math.max(height(root.leftChild), height(root.rightChild));
     }
 
 
