@@ -7,14 +7,14 @@ package com.cydeo.queues;
 public class ValidAnagram {
     public static void main(String[] args) {
 
-        System.out.println();
-        isAnagram("Anagram ", "nagaram");
+    System.out.println(isAnagram("none","neno"));
+
 
 
     }
 
           public static boolean isAnagram(String s, String t){
-              //al
+              //ABC
               int [] letters= new int[26];
               char[] arr1=s.toCharArray();
               char[] arr2=t.toCharArray();
