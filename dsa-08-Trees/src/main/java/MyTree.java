@@ -85,40 +85,43 @@ public class MyTree {
 
     }
 
-    public boolean isLeaf(TNode node){//leaf check
-        return node.leftChild==null && node.rightChild ==null;//if is correct return true
+    public boolean isLeaf(TNode node) {//leaf check
+        return node.leftChild == null && node.rightChild == null;//if is correct return true
     }
 
-   public  void printLeaves(TNode root){
+    public void printLeaves(TNode root) {
 
-        if (root==null) return;
+        if (root == null) return;
         //perform visit on root
-       if(isLeaf(root)) System.out.print(root.value+ ", ");//just change order for traversal
-       //Recursively branch left subtree
-       printLeaves(root.leftChild);
-       printLeaves(root.rightChild);
-       //branch right subtree
+        if (isLeaf(root)) System.out.print(root.value + ", ");//just change order for traversal
+        //Recursively branch left subtree
+        printLeaves(root.leftChild);
+        printLeaves(root.rightChild);
+        //branch right subtree
 
     }
 
-          int countLeaves(TNode root){//how to find  count of leaves node
+    int countLeaves(TNode root) {//how to find  count of leaves node
 
-        if (root== null)return 0;
+        if (root == null) return 0;
         if (isLeaf(root)) return 1;//will be adding each call
-              //recursively left
+        //recursively left
         return countLeaves(root.leftChild) + countLeaves(root.rightChild);
 
     }
-           int  findSumOfLeaves(TNode root){//recursively way
-               if (root== null)return 0;
-               if (isLeaf(root)) return root.value;
-               return findSumOfLeaves(root.leftChild) + findSumOfLeaves(root.rightChild);
-            }
-         int height(TNode root){
-        if(root==null) return -1;
-        if (isLeaf(root))return 0;
-        return 1+Math.max(height(root.leftChild), height(root.rightChild));
+
+    int findSumOfLeaves(TNode root) {//recursively way
+        if (root == null) return 0;
+        if (isLeaf(root)) return root.value;
+        return findSumOfLeaves(root.leftChild) + findSumOfLeaves(root.rightChild);
     }
+
+    int height(TNode root) {
+        if (root == null) return -1;
+        if (isLeaf(root)) return 0;
+        return 1 + Math.max(height(root.leftChild), height(root.rightChild));
+    }
+
 
 
 }
