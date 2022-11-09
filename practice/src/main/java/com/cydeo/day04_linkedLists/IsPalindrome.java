@@ -5,6 +5,8 @@ import java.util.Locale;
 public class IsPalindrome {
     public static void main(String[] args) {
 
+        System.out.println(isPalindrome("level"));
+
     }
 
     public static boolean isPalindrome(String word) {
