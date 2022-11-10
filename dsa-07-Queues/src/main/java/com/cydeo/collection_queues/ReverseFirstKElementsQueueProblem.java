@@ -14,7 +14,7 @@ public class ReverseFirstKElementsQueueProblem {
         System.out.println("After reverse");
         reverseFirstK(queue,3).printQueue();
     }
-        static MyQueue<Integer> reverseFirstK(MyQueue<Integer> queue, int k){ //space complexity o(n) because of stack
+        static MyQueue<Integer> reverseFirstK(MyQueue<Integer> queue, int k){ //space complexity o(n) because of stackK
         // create stack
             Stack<Integer> stack =new Stack<>();
             //push first K elements into stack
