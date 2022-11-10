@@ -1,5 +1,7 @@
 package com.cydeo.queues.queueImplementation;
 
+import java.util.NoSuchElementException;
+
 public class MyQueue <T> {
     QNode<T> front;
     QNode<T> back;
@@ -24,4 +26,29 @@ public class MyQueue <T> {
         size++;
 
     }
+
+    T dequeue(){
+        QNode frontNode;//removing first element from collection
+        if(isEmpty()) throw new NoSuchElementException();
+        if(front==back){
+            frontNode=front;
+            front=back=null;
+        }
+        else{
+            frontNode=front;
+            front=frontNode.next;//new node
+        }
+        size--;
+        return(T)frontNode.value;
+
+
+    }
+    int size(){
+        return size;
+    }
+
+
+
+
+
 }
