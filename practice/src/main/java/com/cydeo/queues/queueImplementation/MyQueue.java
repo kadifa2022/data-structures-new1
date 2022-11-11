@@ -30,6 +30,8 @@ public class MyQueue <T> {
     T dequeue(){
         QNode frontNode;//removing first element from collection
         if(isEmpty()) throw new NoSuchElementException();
+
+        //for one element
         if(front==back){
             frontNode=front;
             front=back=null;
