@@ -4,7 +4,7 @@ public class TwoSumSolution {
 
     public static void main(String[] args) {
         int[] array = new int[]{4, 7, 9, 11};
-        System.out.println(Arrays.toString(twoSumSolution(array, 9)));
+        System.out.println(Arrays.toString(twoSumSolution(array, 16)));
 
     }
 
