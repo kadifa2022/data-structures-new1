@@ -1,5 +1,6 @@
 public class TNode {
-    //create 3 node
+    //create 2 node
+    //and int value
     int value;
     TNode leftChild;
     TNode rightChild;
