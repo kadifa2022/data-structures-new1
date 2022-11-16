@@ -65,6 +65,13 @@ public class MyTree {
         System.out.print(root.value+", ");
         inOrderTraversal(root.rightChild);
     }
+    void inOrderTraversal1(TNode root){
+        if(root==null) return;
+        inOrderTraversal1(root.leftChild);
+        System.out.println(root.value +", ");
+        inOrderTraversal1(root.rightChild);
+    }
+
 
     void postOrderTraversal(TNode root){
         if(root==null) return;
@@ -72,6 +79,12 @@ public class MyTree {
         postOrderTraversal(root.rightChild);
         System.out.print(root.value+", ");
 
+    }
+    void postOrderTraversal1(TNode root){
+        if(root==null) return;
+        postOrderTraversal1(root.leftChild);
+        postOrderTraversal1(root.rightChild);
+        System.out.println(root.value+ ", ");
     }
     void levelOrderTraversal(){
         if(root==null) return;
