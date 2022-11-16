@@ -2,7 +2,7 @@ package com.cydeo.collection_queues;
 
 import java.util.NoSuchElementException;
 
-public class MyQueue<T> {
+public class MyQueue<T> { //Generic
     QNode<T> front;
     QNode<T> back;
 
@@ -19,10 +19,10 @@ public class MyQueue<T> {
         if(isEmpty())
             front = back=node;
         else {
-            back.next=node;
+            back.next=node;//if is not empty adding items
             back=node;
         }
-        size++;
+        size++;//increase size
     }
     T dequeue(){ //removing first element from collection--front and back pointing to the null if we have only one element
 
@@ -33,7 +33,7 @@ public class MyQueue<T> {
         if(front==back){ //we can assign also if is size==1//we have size()
             frontNode=front;
             front=back=null;
-        }    //now i have more than one element
+        }    //now I have more than one element
         else{
             frontNode=front;
             front=front.next; //new node
