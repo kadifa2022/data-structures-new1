@@ -91,7 +91,7 @@ public class MyTree {
         Queue<TNode> queue= new LinkedList<>();
         queue.add(root);//add root to queue
         while(!queue.isEmpty()){//queue is not empty
-            TNode toVisit=queue.poll();//mean front of element
+            TNode toVisit=queue.poll();//mean front of element// as variable to print
             System.out.print(toVisit.value+", ");//  print out and visit element
             if( toVisit.leftChild!=null) queue.add(toVisit.leftChild);//check if we have a left child and put in queue
             if(toVisit.rightChild!=null) queue.add(toVisit.rightChild);//check if we have a right child and put in queue
