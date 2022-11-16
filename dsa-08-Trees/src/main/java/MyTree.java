@@ -34,7 +34,7 @@ public class MyTree {
 
                     current.rightChild = newNode;//inserted child
                     break;
-                }//if leftChild is notnull branch into rightsubtree
+                }//if leftChild is notnull branch into right subtree
                 current = current.rightChild;
             }
         }
@@ -47,13 +47,25 @@ public class MyTree {
         System.out.print(root.value+", ");//visit root
         preOrderTraversal(root.leftChild);//operations visit left subtree
         preOrderTraversal(root.rightChild);//visit tight subtree
+
+
     }
+    void preOrderTraversal1(TNode root){
+        if(root==null) return;
+        System.out.println(root.value + ",");
+        preOrderTraversal1(root.leftChild);
+        preOrderTraversal1(root.rightChild);
+
+
+    }
+
     void inOrderTraversal(TNode root){//send root node
-        if(root==null)return;//terination
+        if(root==null)return;//termination
         inOrderTraversal(root.leftChild);//go left until you find null
         System.out.print(root.value+", ");
         inOrderTraversal(root.rightChild);
     }
+
     void postOrderTraversal(TNode root){
         if(root==null) return;
         postOrderTraversal(root.leftChild);
