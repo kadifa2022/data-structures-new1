@@ -28,6 +28,7 @@ public class InOrderTraversal {
 
         System.out.println(inOrderTraversal(root.left));
         System.out.println(inOrderTraversal(root.right));
+        System.out.println(inOrderTraversal(root));
 
 
     }
