@@ -8,6 +8,7 @@ public class WithEnumAndMap {
 
 
 
+
     }
 
     static void withEnumAndMap(int[] arr){
