@@ -7,6 +7,7 @@ public class LinkedListCycle {
                 listNode.next.next=new ListNode(0);
                 listNode.next.next.next=new ListNode(4);
                 listNode.next.next.next.next=listNode.next;
+        System.out.println(detectCycleWithTwoPointer(listNode.next.next));
 
 
 
