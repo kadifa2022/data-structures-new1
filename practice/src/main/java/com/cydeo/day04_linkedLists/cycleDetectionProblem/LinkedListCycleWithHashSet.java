@@ -3,6 +3,9 @@ package com.cydeo.day04_linkedLists.cycleDetectionProblem;
 import java.util.HashSet;
 
 public class LinkedListCycleWithHashSet {
+    public static void main(String[] args) {
+
+    }
 
     static ListNode withHashSet(ListNode head) {
 
