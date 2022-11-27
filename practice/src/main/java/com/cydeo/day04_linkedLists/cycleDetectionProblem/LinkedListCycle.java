@@ -22,6 +22,16 @@ public class LinkedListCycle {
         while(fast !=null && fast.next !=null){
             slow=slow.next;
             fast=fast.next.next;
+
+            if(fast==slow){
+                ListNode firstNode=head;
+                ListNode intersection=fast;
+                while(firstNode!=intersection){
+                    intersection=intersection.next;
+                    firstNode=firstNode.next;
+                }
+                return firstNode;
+            }
         }
         return null;
     }
