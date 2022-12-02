@@ -20,6 +20,22 @@ public class LowestCommonAncestor {
         root.left.right = new TreeNode(-13);
         root.left.left.left = new TreeNode(-25);
         return root;
+
+    }
+
+    static TreeNode getSampleTree2(){
+        TreeNode root = new TreeNode(13);
+        root.left=new TreeNode(5);
+        root.right= new TreeNode(16);
+        root.left.left=new TreeNode(2);
+        root.left.right = new TreeNode(8);
+        root.left.right.left= new TreeNode(7);
+        root.left.right.right = new TreeNode(10);
+        root.right.left= new TreeNode(14);
+        root.right.right= new TreeNode(28);
+        return root;
+
+
     }
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q){
         if(root==null) return null;
