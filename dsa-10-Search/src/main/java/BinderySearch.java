@@ -6,6 +6,7 @@ public class BinderySearch {
 
         }
         System.out.println(binderySearchIterative(numbers, 6));
+        System.out.println(binderySearchRecursive(numbers,6,0, numbers.length-1));
 
     }
 
