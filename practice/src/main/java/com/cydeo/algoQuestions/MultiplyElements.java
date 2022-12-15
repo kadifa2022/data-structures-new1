@@ -2,7 +2,7 @@ package com.cydeo.algoQuestions;
 
 public class MultiplyElements {
 
-
+   //first solution
     static int[] multiplyElements(int[] ints){
         if(ints == null) return null;
         int n = ints.length;
@@ -19,6 +19,34 @@ public class MultiplyElements {
         return result;
 
     }
+    //second solution
+    static int[] multiply_Array(int[] num){
+        //nothing to do when array size is 1
+
+        if(num.length<=1) return num;
+        int prev=1;
+        for(int i=0; i <num.length;i++){
+            //calculate first element
+            if(i==0){
+                prev = num[i];
+                num[i]=num[i] * num[i +1];
+            }//calculate last element
+            else if(i==num.length-1){
+                num[i]=prev*num[i];
+            }
+            //calculate rest of elements
+            else{
+                int temp = num[i];
+                num[i]= prev*num[i+1];
+                prev=temp;
+            }
+        }
+        return num;
+    }
+
+
+
+
 
 
 
