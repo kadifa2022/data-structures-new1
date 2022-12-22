@@ -47,10 +47,6 @@ public class MultiplyElements {
 
 
 
-
-
-
-
 }
 /*
 Given an array of integers, update every element with the multiplication of previous and next elements with the
