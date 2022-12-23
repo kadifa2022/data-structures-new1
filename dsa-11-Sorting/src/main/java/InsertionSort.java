@@ -2,7 +2,7 @@ public class InsertionSort {
 
     public static int[] insertionSort(int[]array){
         for (int i = 0; i < array.length; i++) {
-            int toBeInserted = array[i];
+            int toBeInserted = array[i];//temp var toBeInserted
             int j = i-1;// this is predecessor
 
             //start shifting operation here
