@@ -3,15 +3,15 @@ public class JD1MergeSort {
 
 
     public static void mergeSort(int[] array){
-        if(array.length<2) return;;
+        if(array.length<2) return;//if you have an array with one element STOP
         int mid = array.length/2;
         int[] leftArray = new int[mid];
         for (int i =0; i < mid; i++) leftArray[i] = array[i];
-            int[] rightArray = new int[array.length-mid];
-            for (int i = mid; i < array.length; i++) rightArray[i-mid] = array[i];
-                mergeSort(leftArray);
-                mergeSort(rightArray);
-                merge(leftArray, rightArray,array);
+        int[] rightArray = new int[array.length-mid];
+        for (int i = mid; i < array.length; i++) rightArray[i-mid] = array[i];
+        mergeSort(leftArray);
+        mergeSort(rightArray);
+        merge(leftArray, rightArray,array);
 
     }
 
