@@ -3,7 +3,7 @@ public class SelectionSort {
     public static int[] selectionSort(int[]array){
         for (int i = 0; i < array.length ; i++) {
             int minIndex = i;
-            //compare min value
+            //starting from first element unsorted part //i+1
             for (int j = i+1; j < array.length; j++) {
                 if(array[j]<array[minIndex]) minIndex=j;
             }
