@@ -35,7 +35,7 @@ public class WordFrequency {
 
 
 /*
-
+         //used regex" +" plus don't count empty spaces
         //Split the sentence into word list
         //loop on the word list
         //if hashmap contains the given word, increment the frequency count
