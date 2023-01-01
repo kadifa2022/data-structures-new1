@@ -25,6 +25,11 @@ public class List_RemoveNameAhmed {
         return names;
     }
 
+    public static List<String> remove3(List<String>names){
+        names.removeIf(name->name.equals("Ahmed"));
+        return names;
+    }
+
 }
 /*
 Given a list of people' names: "Ahmed", "John", Eric",
