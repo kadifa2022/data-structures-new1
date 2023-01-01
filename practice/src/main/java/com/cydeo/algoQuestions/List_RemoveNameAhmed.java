@@ -24,6 +24,7 @@ public class List_RemoveNameAhmed {
         names.removeAll(Arrays.asList("Ahmed"));
         return names;
     }
+    //solution 3
 
     public static List<String> remove3(List<String>names){
         names.removeIf(name->name.equals("Ahmed"));
