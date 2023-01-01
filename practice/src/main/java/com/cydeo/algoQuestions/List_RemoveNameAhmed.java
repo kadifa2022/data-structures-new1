@@ -1,5 +1,6 @@
 package com.cydeo.algoQuestions;
 
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -16,6 +17,12 @@ public class List_RemoveNameAhmed {
         }
         return names;
 
+    }
+    //solution 2
+
+    public static List<String> remove2(List<String> names){
+        names.removeAll(Arrays.asList("Ahmed"));
+        return names;
     }
 
 }
