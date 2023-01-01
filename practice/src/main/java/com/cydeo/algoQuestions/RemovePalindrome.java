@@ -21,5 +21,21 @@ public class RemovePalindrome {
         return list;
     }
 
+    //solution 2
+    public List<String> removePalindrome2(List<String> list){
+        list.removeIf(p->isPalindrome(p));
+        return list;
+    }
+    public static boolean isPalindrome(String str){
+        String reversed = "";
+        for (int i = str.length()-1; i >=0 ; i--) {
+            reversed += str.charAt(i);
+
+        }
+        return reversed.equalsIgnoreCase(str);
+    }
+
+
+
 }
 //remove Palindrome from the list of Spring
