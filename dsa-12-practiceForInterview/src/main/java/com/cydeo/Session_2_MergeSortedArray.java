@@ -28,7 +28,7 @@ public class Session_2_MergeSortedArray {
     }
 
     //second solution
-    public void merge(int[] nums1, int m, int[] nums2, int n){
+    public void mergeSortedArray2(int[] nums1, int m, int[] nums2, int n){
         //Ptr1 for first array Ptr2 for the second array
         int ptr1 = m-1;
         int ptr2 = n-1;
