@@ -1,5 +1,8 @@
 package com.cydeo.Session_7_CycleInLinkedList;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class LinkedListCycleI_II {
 
     public static void main(String[] args) {
@@ -58,6 +61,21 @@ public class LinkedListCycleI_II {
         return ptr1;
 
     }
+
+    public ListNode detectCycle2(ListNode head){
+        Set<ListNode> seenNodes = new HashSet<>();
+        ListNode node = head;
+        while ((node != null)) {
+
+            if(seenNodes.contains(node)){
+                return node;
+            }
+            seenNodes.add(node);
+            node = node.next;
+        }
+        return null;
+    }
+
 
 
 
