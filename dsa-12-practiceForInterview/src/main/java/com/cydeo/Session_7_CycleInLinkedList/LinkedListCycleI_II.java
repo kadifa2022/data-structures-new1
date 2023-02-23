@@ -18,8 +18,9 @@ public class LinkedListCycleI_II {
         n4.next = n5;
         n5.next = n2;
 
-        System.out.println();
+        System.out.println(detectCycle(n1).val);
 
+        System.out.println(getIntersect(new ListNode(5)));
 
     }
 
