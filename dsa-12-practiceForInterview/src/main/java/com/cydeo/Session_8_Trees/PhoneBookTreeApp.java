@@ -10,6 +10,8 @@ public class PhoneBookTreeApp {
 
         PhoneBookTree phoneTree = new PhoneBookTree();
 
+
+
         phoneTree.insert(new CustomerNode("Lando","x","lando@gmail","12355"));
         phoneTree.insert(new CustomerNode("Luke","skywalker","luke@gmail","12355"));
         phoneTree.insert(new CustomerNode("Han","Solo","han@gmail","12355"));
@@ -26,8 +28,8 @@ public class PhoneBookTreeApp {
 
         VisualizePhoneBook.printTree(phoneTree.root, null, true);
         phoneTree.printNamesInAscOrder(phoneTree.root);
-        List<String> result=phoneTree.firstNamesList(phoneTree.root);
-
+//        List<String> result=phoneTree.firstNamesList(phoneTree.root);
+//
 
 
 
