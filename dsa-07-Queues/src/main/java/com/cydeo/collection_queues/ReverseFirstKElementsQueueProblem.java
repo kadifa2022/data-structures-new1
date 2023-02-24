@@ -25,12 +25,36 @@ public class ReverseFirstKElementsQueueProblem {
             while(!stack.isEmpty()){
                 queue.enqueue(stack.pop());
             }
-            //dequeue and enqueue size of queue -k times
-            for (int i = 0; i < queue.size()-k; i++) {
+            //dequeue and enqueue size of queue n-k times
+            for (int i = 0; i < queue.size-k; i++) {
                 queue.enqueue(queue.dequeue());
 
             }
             return queue;
         }
+
+        static MyQueue<Integer> reverseFirstK2(MyQueue<Integer> queue, int k){
+        //create stack
+             Stack <Integer> stack = new Stack<>();
+            for (int i = 0; i < k; i++) {
+                stack.push(queue.dequeue());// push to queue
+
+            }
+            while (!stack.isEmpty()){
+                queue.enqueue(stack.pop());
+            }
+            for (int i = 0; i < queue.size-k; i++) {
+                queue.enqueue(queue.dequeue());
+
+            }
+            return queue;
+
+        }
+
+
+
+
+
+
     }
 
