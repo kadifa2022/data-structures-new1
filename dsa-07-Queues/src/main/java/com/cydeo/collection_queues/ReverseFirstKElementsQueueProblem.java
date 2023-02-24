@@ -33,7 +33,7 @@ public class ReverseFirstKElementsQueueProblem {
             return queue;
         }
 
-        static MyQueue<Integer> reverseFirstK2(MyQueue<Integer> queue, int k){
+        static MyQueue<Integer> reverseFirstK2(MyQueue<Integer> queue, int k){ // o(n) because of stack
         //create stack
              Stack <Integer> stack = new Stack<>();
             for (int i = 0; i < k; i++) {
