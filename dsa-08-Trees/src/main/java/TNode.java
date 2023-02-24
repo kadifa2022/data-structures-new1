@@ -1,7 +1,7 @@
 public class TNode {
     //create 2 node
     //and int value
-    int value;
+    int value;// my data
     TNode leftChild;
     TNode rightChild;
 
