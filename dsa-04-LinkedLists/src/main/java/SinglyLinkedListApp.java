@@ -9,6 +9,8 @@ public class SinglyLinkedListApp {
             myList.add(i);
         }
         myList.printNodes1();
+        myList.deleteById(9);
+        myList.printNodes1();
 
         MySinglyLinkedList myList2=new MySinglyLinkedList();
         myList1.add(1);myList1.add(3);  myList1.add(6);myList1.add(7);
