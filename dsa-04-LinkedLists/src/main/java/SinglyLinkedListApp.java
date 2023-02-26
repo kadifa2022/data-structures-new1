@@ -11,6 +11,7 @@ public class SinglyLinkedListApp {
         myList.printNodes1();
         myList.deleteById(9);
         myList.printNodes1();
+        System.out.println("index of 0 : " + myList.indexOf(0));
 
         MySinglyLinkedList myList2=new MySinglyLinkedList();
         myList1.add(1);myList1.add(3);  myList1.add(6);myList1.add(7);
