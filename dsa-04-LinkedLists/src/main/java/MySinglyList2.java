@@ -57,6 +57,24 @@ public class MySinglyList2 {
             current= current.next;
         }
     }
+    int indexOf(int id){
+              //to find index ogf element
+             // if list is Empty() return -1 directly
+        if(isEmpty()) return -1;
+             //define variable position
+        int pos = 0;//initialize  pos
+             // iterate through the list
+        Node current = head;// set my current with the starting element
+              // while loop
+        while (current != null){
+            if(current.id ==id) return pos; // if is the case return pos
+            pos ++;// increase the position if is not the case
+            current=current.next;
+        }
+        return -1;
+
+    }
+
 
 
     void printNodes1() {
