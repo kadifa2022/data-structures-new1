@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class LinkedListDemo {
@@ -24,6 +25,7 @@ public class LinkedListDemo {
             current=current.next;
         }
     }
+    ArrayList<Node> nodeArrayList = new ArrayList<>();
 
 
 
