@@ -4,6 +4,12 @@ public class SinglyLinkedListApp {
     public static void main(String[] args) {
         MySinglyLinkedList myList1=new MySinglyLinkedList();
         System.out.println(myList1.isEmpty());
+        MySinglyList2 myList = new MySinglyList2();
+        for (int i = 0; i <10 ; i++) {
+            myList.add(i);
+        }
+        myList.printNodes1();
+
         MySinglyLinkedList myList2=new MySinglyLinkedList();
         myList1.add(1);myList1.add(3);  myList1.add(6);myList1.add(7);
         myList2.add(2);myList2.add(4);  myList2.add(5);
