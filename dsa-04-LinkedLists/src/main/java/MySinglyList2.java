@@ -68,7 +68,7 @@ public class MySinglyList2 {
               // while loop
         while (current != null){
             if(current.id ==id) return pos; // if is the case return pos
-            pos ++;// increase the position if is not the case
+            pos ++;// increase the position if is not the caseKud
             current=current.next;
         }
         return -1;
