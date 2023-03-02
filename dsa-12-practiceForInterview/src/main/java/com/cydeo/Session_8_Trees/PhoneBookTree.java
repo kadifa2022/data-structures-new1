@@ -1,8 +1,7 @@
 package com.cydeo.Session_8_Trees;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import javax.swing.tree.TreeNode;
+import java.util.*;
 
 public class PhoneBookTree {
     CustomerNode root;
@@ -49,18 +48,28 @@ public class PhoneBookTree {
 
     }
 
-    List<String> firstNamesList(CustomerNode root) {
-        return null;
 
 
-//        Queue<TNode> queue= new LinkedList<>();
-//        queue.add(root);//add root to queue
-//        while(!queue.isEmpty()){//queue is not empty
-//            TNode toVisit=queue.poll();//mean front of element// as variable to print
-//            System.out.print(toVisit.value+", ");//  print out and visit element
-//            if( toVisit.leftChild!=null) queue.add(toVisit.leftChild);//check if we have a left child and put in queue
-//            if(toVisit.rightChild!=null) queue.add(toVisit.rightChild);//check if we have a right child and put in queue
-//        }
+    List<String> firstNamesList(CustomerNode root, List<String> names) {
+        if (root==null) return names;
+        if(root!=null);
+        firstNamesList(root.leftChild, names);
+        names.add(root.firstName);
+        firstNamesList(root.rightChild,names);
+
+return names;
     }
 
+
 }
+
+
+
+
+
+
+
+
+
+
+
