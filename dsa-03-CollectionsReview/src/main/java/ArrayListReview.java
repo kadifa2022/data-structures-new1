@@ -3,9 +3,9 @@ import java.util.*;
 public class ArrayListReview {
     public static void main(String[] args) {
         // Create ArrayList and a class
-   List<Student> students=new ArrayList<>();
+   List<Student> students = new ArrayList<>();
 
-// Add elements to ArrayList
+      // Add elements to ArrayList
         students.add(new Student(1,"Jack"));
         students.add(new Student(2,"Julia"));
         students.add(new Student(3,"Mike"));
@@ -24,6 +24,10 @@ public class ArrayListReview {
         Iterator iter= students.listIterator();
         while(iter.hasNext()){
             System.out.println(iter.next());
+        }
+        Iterator iter2 = students.listIterator();
+        while (iter2.hasNext()){
+            System.out.println(iter2.next());
         }
 
         // Backwards Iteration
@@ -45,6 +49,8 @@ public class ArrayListReview {
 
 
         // Sorting Elements in List using comparator interface
+
+
         System.out.println("Sorting with Comparator Interface by Id Desc......");
         Collections.sort(students, new sortByIdDesc());
         students.forEach(student-> System.out.println(student));
@@ -54,7 +60,7 @@ public class ArrayListReview {
         students.forEach(student-> System.out.println(student));
 
     }
-      //  implementations of  Comparator
+      //  implementations of  Comparator my method
     static class sortByIdDesc implements Comparator<Student> {
 
           @Override
