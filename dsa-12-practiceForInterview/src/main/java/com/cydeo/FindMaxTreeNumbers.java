@@ -1,9 +1,15 @@
 package com.cydeo;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class FindMaxTreeNumbers {
     public static void main(String[] args) {
-        int [] array = {10,5,9,10, 12};
-        System.out.println(findTreeMaxNumbers(array));
+       int [] array = {10,5,9,10,12,10};
+        ArrayList<Integer> boxes = new ArrayList<>();
+        boxes.add(12);boxes.add(18); boxes.add(2);
+        System.out.println(Arrays.toString(findTreeMaxNumbers(array)));
+
 
 
     }
