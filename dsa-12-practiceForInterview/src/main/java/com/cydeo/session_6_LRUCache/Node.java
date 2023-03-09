@@ -1,4 +1,4 @@
-package com.cydeo.LRUCache;
+package com.cydeo.session_6_LRUCache;
 
 public class Node {
     int value;
