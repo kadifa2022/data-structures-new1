@@ -1,4 +1,4 @@
-package com.cydeo;
+package com.cydeo.session_2_MergeSortedArray;
 
 import java.util.Arrays;
 
