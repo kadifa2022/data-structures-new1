@@ -1,4 +1,4 @@
-package com.cydeo;
+package com.cydeo.session_1_KidsWithCandies;
 
 import java.util.ArrayList;
 import java.util.Arrays;
