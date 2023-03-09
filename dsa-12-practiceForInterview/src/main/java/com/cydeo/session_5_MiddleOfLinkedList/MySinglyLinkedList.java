@@ -1,4 +1,4 @@
-package com.cydeo.session_4_MiddleOfLinkedList;
+package com.cydeo.session_5_MiddleOfLinkedList;
 
 public class MySinglyLinkedList {
     Node head;
