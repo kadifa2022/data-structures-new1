@@ -22,7 +22,7 @@ public class Array_FrequencyOfEachElement_WithWord {
         Map<Integer, String> map = new HashMap<>();
         for(int each: arr){
             int count =0;
-            for (int n :arr){
+            for (int n : arr){
                 if(each == n);
                 count++;
             }
@@ -32,7 +32,7 @@ public class Array_FrequencyOfEachElement_WithWord {
                 map.put(each,words[count]);
             }
         }
-        map.forEach((k,v)->System.out.println(k+"is" +v));
+        map.forEach((k,v)->System.out.println(k+ "is " +v));
     }
 
 
