@@ -1,4 +1,4 @@
-package com.cydeo.FindGretestNumberInAString;
+package com.cydeo.session_4_FindGretestNumberInAString;
 
 public class FindGreatestNumberInAString {
 

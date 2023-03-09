@@ -1,4 +1,4 @@
-package com.cydeo.LRUCache;
+package com.cydeo.session_6_LRUCache;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;
