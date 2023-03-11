@@ -2,6 +2,7 @@ package com.cydeo.algoQuestions;
 
 import java.util.*;
 
+
 public class Array_FrequencyOfEachElement {
 
     public static void main(String[] args) {
@@ -27,7 +28,14 @@ public class Array_FrequencyOfEachElement {
         for(String str : new LinkedHashSet<>(temp)){
             System.out.println(str+ "=" + Collections.frequency(temp, str));
         }
+        System.out.println("----------------Third Solution --------------------------");
+
+        Arrays.stream(testArray).distinct().forEach(e-> System.out.println(e+ "="+ Arrays.stream(testArray)
+                .filter(p->p.equals(e)).count()));
+
+
     }
+
 }
 /*
          Given the array return the output
