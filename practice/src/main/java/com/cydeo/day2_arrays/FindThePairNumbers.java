@@ -1,4 +1,4 @@
-package com.cydeo.day2_arrays.twosum;
+package com.cydeo.day2_arrays;
 
 import com.cydeo.day2_arrays.Array;
 
@@ -7,6 +7,9 @@ import java.util.Arrays;
 public class FindThePairNumbers {
 
     public static void main(String[] args) {
+       int[] arr = {16, 3, 11, 5, 15};
+
+        System.out.println(Arrays.toString(findThePairNumbers(arr, 14)));
 
     }
     public static int[]findThePairNumbers(int[]arr, int target){
@@ -24,6 +27,7 @@ public class FindThePairNumbers {
         return new int[0];
 
     }
+
 
 }
 /*
