@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class MoveAllZerosToTheEnd {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(moveAllZerosToTheEnd(new int[]{1,0,2,0,0,7})));
+
     }
     //[1,0,2,0,0,7]
 
