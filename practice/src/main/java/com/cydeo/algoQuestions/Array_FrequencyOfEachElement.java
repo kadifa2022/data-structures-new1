@@ -1,7 +1,6 @@
 package com.cydeo.algoQuestions;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Array_FrequencyOfEachElement {
 
@@ -20,6 +19,13 @@ public class Array_FrequencyOfEachElement {
         }
         for(Map.Entry<String, Integer> entry: map.entrySet()){
             System.out.println(entry);
+        }
+
+        System.out.println(" ------------------Second Solution ------------------ ");
+
+        List<String> temp = Arrays.asList(testArray);
+        for(String str : new LinkedHashSet<>(temp)){
+            System.out.println(str+ "=" + Collections.frequency(temp, str));
         }
     }
 }
