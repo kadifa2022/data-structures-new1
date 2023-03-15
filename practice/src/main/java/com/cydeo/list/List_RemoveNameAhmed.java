@@ -1,6 +1,7 @@
 package com.cydeo.list;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -12,7 +13,7 @@ public class List_RemoveNameAhmed {
         names.add("Omer");
         names.add("Yusuf");
         names.add("Ahmed");
-        System.out.println(removeName(names));
+        System.out.println(remove(names));
     }
 
     public static List<String> removeName(List<String> names){
@@ -23,6 +24,16 @@ public class List_RemoveNameAhmed {
         }
         return names;
     }
+//solution 2
+    public static List<String> remove(List<String> names){
+        names.removeAll(Arrays.asList("Ahmed"));
+        return names;
+    }
+
+    //solutin 3
+
+
+
 
 
 }
