@@ -13,7 +13,7 @@ public class List_RemoveNameAhmed {
         names.add("Omer");
         names.add("Yusuf");
         names.add("Ahmed");
-        System.out.println(remove(names));
+        System.out.println(remove2(names));
     }
 
     public static List<String> removeName(List<String> names){
@@ -30,7 +30,12 @@ public class List_RemoveNameAhmed {
         return names;
     }
 
-    //solutin 3
+    //solution3
+
+    public static List<String> remove2(List<String> names){
+        names.removeIf(name-> name.equals("Ahmed"));
+        return names;
+    }
 
 
 
