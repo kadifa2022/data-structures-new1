@@ -1,10 +1,16 @@
 package com.cydeo.algoQuestions;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
 public class RemovePalindrome {
     public static void main(String[] args) {
+
+        List<String> names = new ArrayList<>();
+        names.addAll(Arrays.asList("JAVA", "Python", "Car", "Level","Civic"));
+        System.out.println(removePalindrome1(names));
 
     }
     public static List<String> removePalindrome1(List<String> list){
