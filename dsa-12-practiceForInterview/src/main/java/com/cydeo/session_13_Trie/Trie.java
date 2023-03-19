@@ -17,7 +17,7 @@ public class Trie {
             //to put value we need for loop
            for(char c: arr) {   //Iterate each node
                //children is map
-           if(!curNode.children.containsKey(c)){
+           if(!curNode.children.containsKey(c)){ // if the current node does not contain -put new trie node()// c is character for Cat
                curNode.children.put(c, new TrieNode());//empty
            }
            //if is the node continue
@@ -29,11 +29,11 @@ public class Trie {
 
 
         public boolean search(String word){
-        TrieNode curNode = root;
+        TrieNode curNode = root;//start
         char[]arr=word.toCharArray();
-        for(char c : arr){
-            if(!curNode.children.containsKey(c)) return false;
-            curNode=curNode.children.get(c); // move forward
+        for(char c : arr){ // put in char arr
+            if(!curNode.children.containsKey(c)) return false;// if doesnot contain  letter B return f
+            curNode=curNode.children.get(c); // move forward to another letter (children is map)
         }
         return curNode.isWord;
         }
