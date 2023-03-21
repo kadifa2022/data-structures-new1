@@ -1,0 +1,26 @@
+package com.cydeo.algoQuestions;
+
+public class CamelCasing {
+
+    public static String camelCasing(String str) {
+
+        String result = "";
+
+        for(char each : str.toCharArray()){
+            if(each !=Character.toUpperCase(each)){
+                result +=each;
+            }else if(each==Character.toUpperCase(each)){
+                result += " " + Character.toUpperCase(each);
+
+            }else{
+                result += str;
+            }
+        }
+        return result.trim();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(camelCasing("kad ifa"));
+    }
+
+}
