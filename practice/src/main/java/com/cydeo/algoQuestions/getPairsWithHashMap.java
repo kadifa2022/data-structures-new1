@@ -1,5 +1,6 @@
 package com.cydeo.algoQuestions;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -16,5 +17,14 @@ public class getPairsWithHashMap {
         return pairs;
 
 
+    }
+
+    public static void main(String[] args) {
+        List<String> animals= new ArrayList<>();
+        animals.add("cat");
+        animals.add("dog");
+
+
+        System.out.println(getPairsWithHashMap.getPairs(animals));
     }
 }
