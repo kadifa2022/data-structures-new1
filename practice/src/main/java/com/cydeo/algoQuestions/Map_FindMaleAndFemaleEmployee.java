@@ -35,5 +35,38 @@ public class Map_FindMaleAndFemaleEmployee {
         System.out.println("Male employees:" + countMaleEmployees);
         System.out.println("Female employees:"+ countFemaleEmployees);
 
+
+        System.out.println("--------Display all names of female employees-------");
+        //Another solution
+
+        for(Map.Entry<String, String> eachEntry :employeeMap.entrySet()){
+            if (eachEntry.getValue().equals("F")) {
+
+                System.out.println(eachEntry.getKey());
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
