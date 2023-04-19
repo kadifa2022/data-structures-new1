@@ -30,11 +30,18 @@ public class DateTimeFormatterIntro {
 
 
         //EEEE-DAY
-        //EEE - Jan, Feb, Mar etc
+        //EEE - MON, TUES, WED
+        //MMM -Jan, Feb, Mar etc
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/y  hh:mm a");
         LocalDateTime starts = LocalDateTime.now();
 
         System.out.println(starts.format(dtf));
+
+        //Task: Use the LocalDateTime, get the date and time in following format
+        //Tuesday, 1:00 pm, Nov/24/2020
+        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("EEEE, h:mm a, MMM/dd/y");
+        LocalDateTime time2 = LocalDateTime.of( 2020,11,24, 13,0);
+        System.out.println(time2.format(dtf2));
     }
 }
 // CHECK DAY 25 IN JAVA
