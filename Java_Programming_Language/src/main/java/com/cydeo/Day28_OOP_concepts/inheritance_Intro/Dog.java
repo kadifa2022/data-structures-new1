@@ -1,4 +1,4 @@
-package com.cydeo.Day28_OOP_concepts.inheritance;
+package com.cydeo.Day28_OOP_concepts.inheritance_Intro;
 
 public class Dog extends Animal{// dog is an animal ->methods and variable
         //Child          // parent
@@ -25,6 +25,6 @@ public class Dog extends Animal{// dog is an animal ->methods and variable
  */
 
     public void bark(){
-        System.out.println(name + "is barking");// defining bark() because is unique for dog only
+        System.out.println(getName() + " is barking");// defining bark() because is unique for dog only
     }
 }
