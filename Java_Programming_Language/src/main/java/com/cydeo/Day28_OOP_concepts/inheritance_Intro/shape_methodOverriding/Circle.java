@@ -26,8 +26,28 @@ public class Circle extends Shape{
         return 6.28 * radius;
     }
 
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "{" +
+                "name='" + getName() + '\'' +
+                " ,radius='" + radius + '\'' +
+                " ,area='" + area() + '\'' +
+                " ,perimeter ='" + perimeter() + '\'' +
+                '}';
+
+    }
     @Override
     public void drew() {
         super.drew();
+        System.out.println(" \t   * * *");
+        for (int i = 0; i < 3; i++) {
+            System.out.println("  \t*         *");
+        }
+
+
+        System.out.println(" \t   * * *");
     }
+
+
 }
