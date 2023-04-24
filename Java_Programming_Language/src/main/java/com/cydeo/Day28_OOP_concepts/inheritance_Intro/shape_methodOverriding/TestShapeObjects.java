@@ -7,5 +7,12 @@ public class TestShapeObjects {
         System.out.println(square);
 
         square.drew();
+
+        System.out.println("----------------");
+        Circle circle =  new Circle(3.5);
+
+        System.out.println(circle);
+
+        circle.drew();
     }
 }
