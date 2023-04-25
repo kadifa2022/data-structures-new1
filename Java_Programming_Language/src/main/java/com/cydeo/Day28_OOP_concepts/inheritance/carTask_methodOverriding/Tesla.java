@@ -3,7 +3,7 @@ package com.cydeo.Day28_OOP_concepts.inheritance.carTask_methodOverriding;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Tesla extends Car{
+public final class Tesla extends Car{//final class
 
 
     public Tesla(String model, String color, int year, double price) {
