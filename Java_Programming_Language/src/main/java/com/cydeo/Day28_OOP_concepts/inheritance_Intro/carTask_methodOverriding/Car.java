@@ -79,7 +79,7 @@ public class Car {
     @Override
     public String toString() {
         return make + "{" +
-                ", model='" + model + '\'' +
+                " model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +
                 ", price=" + price +
