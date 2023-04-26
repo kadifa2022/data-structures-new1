@@ -1,4 +1,4 @@
-package com.cydeo.Day28_OOP_concepts.abstraction.carTask_withInterface;
+package com.cydeo.Day28_OOP_concepts.abstraction.carTask;
 
 public class TestCarObjects {
 
@@ -22,6 +22,10 @@ public class TestCarObjects {
         honda.start();
         audi.start();
         tesla.start();
+
+        System.out.println("-----------------------------------------------");
+        audi.autoPark();
+        tesla.autoPilot();
     }
 
 
