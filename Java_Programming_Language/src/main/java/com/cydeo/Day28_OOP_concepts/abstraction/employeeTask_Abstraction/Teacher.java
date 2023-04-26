@@ -12,7 +12,7 @@ public class Teacher extends Employee{
 
     @Override
     public void work() {//abstract methode and giving body
-        System.out.println(getName()+ "is teaching");
+        System.out.println(getName()+ " is teaching");
 
     }
 }
