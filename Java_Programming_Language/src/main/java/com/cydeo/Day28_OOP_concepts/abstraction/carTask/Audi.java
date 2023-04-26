@@ -1,4 +1,4 @@
-package com.cydeo.Day28_OOP_concepts.abstraction.carTask_withInterface;
+package com.cydeo.Day28_OOP_concepts.abstraction.carTask;
 
 public class Audi extends Car{
 
@@ -12,7 +12,7 @@ public class Audi extends Car{
     }
 
     public void autoPark(){
-        System.out.println(getMake()+" "+ getModel()+ "has auto park feature");
+        System.out.println(getMake()+" "+ getModel()+ " has auto park feature");
 
     }
 }

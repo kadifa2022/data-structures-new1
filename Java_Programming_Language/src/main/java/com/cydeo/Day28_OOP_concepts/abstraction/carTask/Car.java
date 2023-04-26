@@ -1,4 +1,4 @@
-package com.cydeo.Day28_OOP_concepts.abstraction.carTask_withInterface;
+package com.cydeo.Day28_OOP_concepts.abstraction.carTask;
 
 public abstract class Car {// abstract class meant to be inherited, can not be instantiated
     // to make brand unchangeable use final
