@@ -8,7 +8,7 @@ public class Tesla extends Car{
 
     @Override
     public void start() {
-        System.out.println("Use voice control to start" + getMake() + " " +getModel());
+        System.out.println("Use voice control to start " + getMake() + " " +getModel());
 
     }
 
