@@ -1,6 +1,6 @@
 package com.cydeo.Day28_OOP_concepts.abstraction.animalTask_withInterface;
 
-public class Tiger extends Animal{
+public class Tiger extends Animal implements WildAnimal{
 
     public Tiger(String name, String breed, char gender, int age, String size, String color) {
         super(name, breed, gender, age, size, color);
@@ -9,6 +9,12 @@ public class Tiger extends Animal{
     @Override
     public void eat() {
         System.out.println("Tiger" + getName()+ " is eating deer");
+
+    }
+
+    @Override
+    public void hunt() {
+        System.out.println();
 
     }
 }
