@@ -1,6 +1,9 @@
-package com.cydeo.Day28_OOP_concepts.abstraction.animalTask_withInterface;
+package com.cydeo.Day28_OOP_concepts.polymorphism;
 
-public class Dog extends Animal implements Playable{
+import com.cydeo.Day28_OOP_concepts.abstraction.animalTask_withInterface.Animal;
+import com.cydeo.Day28_OOP_concepts.abstraction.animalTask_withInterface.Playable;
+
+public class Dog extends Animal implements Playable {
     public Dog(String name, String breed, char gender, int age, String size, String color) {
         super(name, breed, gender, age, size, color);
     }
@@ -15,9 +18,5 @@ public class Dog extends Animal implements Playable{
     public void play() {
         System.out.println("Dog " + getName()+ " is playing");
 
-    }
-
-    public void bark(){
-        System.out.println(getName()+"is barking");
     }
 }
