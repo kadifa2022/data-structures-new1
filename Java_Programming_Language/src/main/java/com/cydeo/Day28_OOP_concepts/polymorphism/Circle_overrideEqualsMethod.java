@@ -38,13 +38,13 @@ public class Circle_overrideEqualsMethod {// equals() is used to comparing the v
     }
 
     @Override// this Equals() was inherit from object.class ->converting to circle
-    public boolean equals(Object obj) {
+    public boolean equals(Object obj) { // equals method from Object class, can take any objects
         if (!(obj instanceof Circle)) {;// if the specified object is not circle, then would not compare them
         System.err.println("Invalid object");
         System.exit(1);
                     // return super.equals(obj);
         }
-    if(this.radius == ( (Circle )obj).radius ){ // if the curren circle radius ia equal to the given radius, then two circle are equals
+    if(this.radius == ( (Circle)obj ).radius ){ // if the curren circle radius ia equal to the given radius, then two circle are equals
         return true;
     }
     return false;
