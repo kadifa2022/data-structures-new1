@@ -58,6 +58,12 @@ public class PolymorphismPractice_InstanceOf {
         System.out.println("countDrivers=" + countDriver);
 
         System.out.println("-------------------------------------------------------");
+        for (Employee each :employees){
+           if(!(each instanceof Developer)){// print all names that are not developers
+               System.out.println(each.getName());
+
+            }
+        }
 
     }
 
