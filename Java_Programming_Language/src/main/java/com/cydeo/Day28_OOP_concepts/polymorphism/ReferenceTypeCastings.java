@@ -1,12 +1,13 @@
 package com.cydeo.Day28_OOP_concepts.polymorphism;
 
-import com.cydeo.Day28_OOP_concepts.abstraction.employeeTask_Abstraction.Developer;
-import com.cydeo.Day28_OOP_concepts.abstraction.employeeTask_Abstraction.Employee;
-import com.cydeo.Day28_OOP_concepts.abstraction.employeeTask_Abstraction.Tester;
+
+import com.cydeo.Day28_OOP_concepts.abstraction.TransportationTask.AutoPilot;
+import com.cydeo.Day28_OOP_concepts.abstraction.TransportationTask.Electric;
+import com.cydeo.Day28_OOP_concepts.abstraction.TransportationTask.Tesla;
+import com.cydeo.Day28_OOP_concepts.abstraction.employeeTask_Abstraction.*;
 import com.cydeo.Day28_OOP_concepts.inheritance.animalTask.Animal;
 import com.cydeo.Day28_OOP_concepts.inheritance.animalTask.Dog;
-import com.cydeo.Day28_OOP_concepts.inheritance.animalTask.Cat;
-import com.cydeo.Day28_OOP_concepts.inheritance.phoneTask.IPhone;
+
 import com.cydeo.Day28_OOP_concepts.inheritance.phoneTask.Nokia;
 import com.cydeo.Day28_OOP_concepts.inheritance.phoneTask.Phone;
 
@@ -62,6 +63,42 @@ public class ReferenceTypeCastings {
 
        // Tester tester  = (Tester)employee;// can't be Tester converted to developer NO IS A Relationship "classCastException"
         //IF IS NO DOWN CASTING  -> NO ACCESSING  METHODS  OBJECT TYPES
+
+        Electric electric = new Tesla("Tesla", "Model Y", "Blue", 2020, 55000);
+        electric.charge();
+        ((Tesla)electric).selfDrive();// casted down -> selfDrive()is coming from Tesla class(unique)
+
+        ( (AutoPilot)electric).selfDrive();
+        System.out.println("-----------------------------------------------");
+
+        Employee employee1= new Teacher("Daniel", 54, 'M', "A1", "Math Teacher", 85000);
+
+        Employee employee2 = new Developer("Lucy", 30, 'F', "C1", "Java Developer", 90000,"Java");
+        Employee employee3 = new Driver("Ilfo", 50, 'M', "D2","Truck driver",80000);
+        Employee employee4 = new Tester("Milojko", 30, 'M',"C3","Tester", 93000);
+        // object type decides which implementation will be executed
+        employee1.work();//teacher
+        employee2.work();// developer
+        employee3.work();// driver
+        employee4.work();// tester
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
