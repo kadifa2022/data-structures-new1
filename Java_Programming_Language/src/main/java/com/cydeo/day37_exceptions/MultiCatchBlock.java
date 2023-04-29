@@ -21,7 +21,7 @@ public class MultiCatchBlock {
         }catch(IndexOutOfBoundsException e){
             System.out.println("Fourth catch lock");
             e.printStackTrace();
-        }catch (RuntimeException e){
+        }catch (RuntimeException e){// rule for multiple catch block: parent catch block can't be placed before child
             System.out.println("Fifth catch b lock");
             e.printStackTrace();
         }
