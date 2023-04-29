@@ -1,4 +1,4 @@
-package com.cydeo.Constructor_Remove_If_Method.utility;
+package com.cydeo.utility;
 import com.cydeo.Day28_OOP_concepts.inheritance.ProtectedAccessModifier;
 
 public class Test3 extends ProtectedAccessModifier{
