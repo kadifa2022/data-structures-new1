@@ -3,7 +3,7 @@ package com.cydeo.day38_exceptions;
 import java.io.FileNotFoundException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-//throws is fixing temporally exception
+//throws is fixing temporally exception and can be only used with the methode signature
 // throw is throwing exception (creating exception)
 public class ThrowKeyword {// the only purpose to use Throw keyword is to crash the programs
 
@@ -40,6 +40,42 @@ public class ThrowKeyword {// the only purpose to use Throw keyword is to crash 
         }catch (FileNotFoundException e){
             e.printStackTrace();
         }
+
+        System.out.println("---------------------------------------------");
+
+        RuntimeException exception = new RuntimeException();
+        //throw exception;
+        // throw new RuntimeException();
+
+        //throw new Person("Jimmy", 45, 'M');has to be exception
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }
