@@ -75,7 +75,7 @@ public class IterableExample {
         System.out.println(list4);
 
 
-        System.out.println("-------------------------iterator/removeIf() with LinkedList--------------------");
+        System.out.println("-------------------------removeIf() with LinkedList--------------------");
 
         List<Integer> list5 = new ArrayList<>();
         list5.addAll(Arrays.asList(1,2,3,4,5,6,7,1,2,3,3,4,1,2,3,3));
