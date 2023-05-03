@@ -1,7 +1,11 @@
 package com.cydeo.day42_maps;
 
+import com.cydeo.Day28_OOP_concepts.abstraction.TransportationTask.Car;
+import com.cydeo.Day28_OOP_concepts.abstraction.employeeTask_Abstraction.Developer;
+
 import java.time.LocalDate;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 public class MapPractice4_MapOfMap {
@@ -68,6 +72,7 @@ public class MapPractice4_MapOfMap {
         mapOfMaps.put(2, person3);
         mapOfMaps.put(3, person4);
         mapOfMaps.put(4, person5);
+        //mapOfMaps.putAll()
 
         System.out.println(mapOfMaps);
 
@@ -90,7 +95,8 @@ public class MapPractice4_MapOfMap {
         }
         System.out.println(mapOfMaps);
 
-       // Map<Map<String, Integer>, Map<String, Integer>> mapMapMap = new LinkedHashMap<>();//avoid to create map of another 2 maps (memory usage) but is possible
-
+       Map<Map<String, Integer>, Map<String, Integer>> mapMapMap = new LinkedHashMap<>();//avoid to create map of another 2 maps (memory usage) but is possible
+        Map<int[], List<Integer>> map2 = new LinkedHashMap<>();
+        Map<Developer, Car> map3 = new LinkedHashMap<>();
     }
 }
