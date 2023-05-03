@@ -13,9 +13,24 @@ public class TestStringObjects {
        String str4 = "Java";
         System.out.println(str1 == str2);// false not equally
         System.out.println(str2==str4);// true
-        System.out.println(str1== str3);//false
+        System.out.println(str1== str3);//false== operator is checking if is the one object same as other object
+
+        System.out.println(str1.equals(str2));// value of one object equals of the value of another objects
 
 
+       str1.endsWith("2");
+        /*
+        String is sequences of characters
+        String Methods;
+        substring()
+        charAt()
+        length()
+        indexOf(),(lastIndexOf),
+        lower/upper().
+        replace, (replaceFirst)
+        equals(),
+        contains()
+         */
     }
 
 }
