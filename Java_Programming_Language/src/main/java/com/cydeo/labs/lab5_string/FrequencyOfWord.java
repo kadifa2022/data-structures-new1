@@ -23,6 +23,7 @@ public class FrequencyOfWord {
 
 
         String sentence = "Java Java Java Java Python C# Ruby";
+        // for ignoreCase// sentence.toLowerCase().replace( "java", "abc")
         String temp  = sentence.replace("Java", "abc");
         int totalNumberOfJava = sentence.length()- temp.length();
         System.out.println(totalNumberOfJava);
