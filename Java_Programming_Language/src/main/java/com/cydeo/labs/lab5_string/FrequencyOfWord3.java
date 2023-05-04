@@ -16,16 +16,22 @@ public class FrequencyOfWord3 {
 
         System.out.println("---------------------------------------------");
 
-        String s = "Cat Cat Cat Cat Dog Dog Dog";
+        String s = "Cat Cat Cat Cat Dog Dog Dog ";
          int countCat = 0;
+         int countDog = 0;
+
         for (int i = 0; i < s.length()-3; i++) {
-            String each = s.substring(i, i + 3);
-            if(each.equals("Cat")){
+            String each = s.substring(i, i + 3);//creating all possible substring with 3 characters
+            if(each.equals("Cat")){// if the substring is equal to cat
                 countCat++;
+            }
+            if(each.equals("Dog")){// if the substring is equal to dog
+                countDog++;
             }
 
         }
-        System.out.println(countCat);
+        System.out.println("countCat " +countCat);
+        System.out.println("countDog " +countDog);
 
     }
 
