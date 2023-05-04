@@ -30,6 +30,7 @@ public class TestStringObjects {
         replace, (replaceFirst)
         equals(),
         contains()
+        startWith/endWith()
          */
     }
 
