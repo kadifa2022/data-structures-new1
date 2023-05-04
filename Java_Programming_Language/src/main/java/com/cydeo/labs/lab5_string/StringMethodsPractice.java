@@ -62,7 +62,7 @@ public class StringMethodsPractice {
         System.out.println(domain);
 
 
-        System.out.println("-----------------------------------");
+        System.out.println("----------------substring and indexOf-------------------");
 /*
         String s2 = " I study at CYDEO";
         int begIndex = s2.indexOf("at") + 2;
@@ -75,6 +75,36 @@ public class StringMethodsPractice {
         String s3 = "I study at CYDEO school";
         String schoolName = s3.substring(s3.indexOf('C'));// upper latter uniq
         System.out.println(schoolName);
+
+        System.out.println("-------------Equals() return boolean value-----------");
+        String a1 = "DOG";
+        String a2 = "dog";// equals() comparing two
+
+        System.out.println(a1.equals(a2));
+        System.out.println(a1.equalsIgnoreCase(a2));// comparing string literal
+
+
+        System.out.println("----------------contains()----------------------" );
+
+            // if something is included in sentence than we should use  contains() return boolean
+        String str = "Java is my favorite programming language";
+
+        System.out.println(str.equals("Java"));// for comparing
+        System.out.println(str.contains("Java"));// if is included
+
+        System.out.println("--------trim() repeat() isBlank------------------------------");
+
+        str.trim();// spaces on beginning and end will be removed
+        str.repeat(2);//how many times  same string will be repeated
+        System.out.println(str.repeat(2));
+
+        System.out.println("------------StartsWith()endsWith()------------------------");
+
+        String w = "Cydeo School";
+        System.out.println(w.startsWith("Cydeo"));
+        System.out.println(w.endsWith("ool"));
+
+
 
 
 
@@ -104,8 +134,8 @@ if the iteration is unknown
         indexOf(),(lastIndexOf),
         lower/upper().
         replace, (replaceFirst)
-        equals(),
-        contains()
+        equals(),// return boolean
+        contains()// return boolean
         startWith/endWith()
 
  */
