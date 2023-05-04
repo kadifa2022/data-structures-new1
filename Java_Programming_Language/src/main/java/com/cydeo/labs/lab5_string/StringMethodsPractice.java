@@ -94,4 +94,18 @@ for (initialization; condition; iterator ) //to start and stop{} body of the loo
 
 While loop:
 if the iteration is unknown
+
+
+        String is sequences of characters
+        String Methods;
+        substring()
+        charAt()
+        length()
+        indexOf(),(lastIndexOf),
+        lower/upper().
+        replace, (replaceFirst)
+        equals(),
+        contains()
+        startWith/endWith()
+
  */
