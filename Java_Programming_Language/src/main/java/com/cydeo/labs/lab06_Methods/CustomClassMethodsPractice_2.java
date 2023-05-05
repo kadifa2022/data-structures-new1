@@ -18,7 +18,9 @@ public class CustomClassMethodsPractice_2 {
         System.out.println("-----------------Tenth Task----------------------");
         System.out.println(countHi("Hi Hi Hi Hi Hi"));
         System.out.println("-----------------Eleventh Task----------------------");
+        System.out.println(catDog("CatDogCatDog"));
         System.out.println("-----------------Twelfth Task----------------------");
+
         System.out.println("-----------------Thirteen Task----------------------");
         System.out.println("-----------------Fourteen Task----------------------");
     }
@@ -86,19 +88,22 @@ public class CustomClassMethodsPractice_2 {
     }
     // task 10
     public static int countHi(String str){// calling frequency () from stringUtility// we reused  this method
-        return StringUtility.frequencyOfSentenceAndWord(str, "Hi");
+        return StringUtility.frequency(str, "Hi");
 
 }
 
     // task 11
     public static boolean catDog(String str){
         str = str.toLowerCase();
-        int countCat = StringUtility.frequencyOfSentenceAndWord(str, "cat");
-        int countDog = StringUtility.frequencyOfSentenceAndWord(str, "dog");
+        int countCat = StringUtility.frequency(str, "cat");
+        int countDog = StringUtility.frequency(str, "dog");
         return countDog==countCat;// == return boolean T/F
 
 
     }
+
+
+
 
 
 
