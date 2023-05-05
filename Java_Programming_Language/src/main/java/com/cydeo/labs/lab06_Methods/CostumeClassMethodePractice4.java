@@ -26,8 +26,20 @@ public class CostumeClassMethodePractice4 {
 
         System.out.println("----------------------------------");
 
-        String s = "aaabbc";
+        String s = "aaabbc"; //"a3b2c1"
+        String nonDup= StringUtility.removeDup(s);//abc
+        String result ="";
+        for (int i = 0; i < nonDup.length(); i++) {
+           /*
+            char ch = nonDup.charAt(i);            //a b c
+            int f = StringUtility.frequency(s, ch); //3 2 1
+            result +="" + ch  +f;// convert to string
 
+            */
+            result+="" +nonDup.charAt(i) + StringUtility.frequency(s, nonDup.charAt(i));// shorter solution
+
+        }
+        System.out.println(result);
 
 
     }
