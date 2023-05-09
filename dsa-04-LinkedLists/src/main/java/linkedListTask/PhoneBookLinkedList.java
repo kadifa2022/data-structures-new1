@@ -13,5 +13,26 @@ public class PhoneBookLinkedList {
         public int size(){
             return size;
         }
+
+        public void  printPhoneBook(){
+        PhoneNode current = head;
+        while(current != null){
+            System.out.println(current.contact);
+            current= current.next;
+        }
+        }
+        public void add(Contact contact) {
+            PhoneNode nodeToBeInserted = new PhoneNode(contact);
+
+            if(isEmpty()) {
+                head = tail = nodeToBeInserted;
+            }else{
+                tail.next = nodeToBeInserted;
+                tail = nodeToBeInserted;
+            }
+            size++;
+        }
+
+
     }
 
