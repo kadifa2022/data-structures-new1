@@ -68,6 +68,54 @@ public class PhoneBookLinkedList {
         return listLastName;
         }
 
+        public void deleteByFirstName(String firstName) {
+            if (isEmpty())
+                throw new NoSuchElementException("This is an empty list");
+                    PhoneNode prev = head;
+                    PhoneNode current = head;
+                    while (current != null){
+                        if (current.contact.getFirstName().equals(firstName)) {
+
+                            if(current==head){
+                                head =current.next;
+                                current.next = null;
+                            }else if(current == tail){
+                                tail = prev;
+                                prev.next= null;
+                            }else{
+                                prev.next = current.next;
+                                current.next = null;
+                                size--;
+                            }
+                        }
+
+                        prev= current;
+                        current = current.next;
+            }
+
+        }
+
+        public void deleteAllMatchingLastName(String lastName){
+        if(isEmpty()){
+            throw  new NoSuchElementException("no such element");
+        }
+         PhoneNode current = head;
+
+        while ((current != null && current.next != null)){
+            if(current.next.contact.getLastName().equals(lastName)){
+                current.next = current.next.next;
+            }else{
+                current = current.next;
+            }
+        }
+
+
+        }
+
+        public List<PhoneNode> findAll(){
+        return null;
+        }
+
 
 
     }
