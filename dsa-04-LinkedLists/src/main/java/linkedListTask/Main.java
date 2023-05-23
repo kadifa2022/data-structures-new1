@@ -11,7 +11,13 @@ public class Main {
         Contact contact2 = new Contact("Mike", "Smith", "mike@gmail.com", "9876532");
         Contact contact3 = new Contact("Yasemin", "Smith", "yasemin@gmail.com", "4567890");
 
+       p.add(contact1);
+       p.add(contact2);
+       p.add(contact3);
 
+
+       p.deleteAllMatchingLastName("Smith");
+       p.printPhoneBook();
 
     }
 }
