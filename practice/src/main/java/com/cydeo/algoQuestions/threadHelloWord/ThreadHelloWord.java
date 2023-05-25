@@ -10,7 +10,7 @@ public class ThreadHelloWord extends Thread {
     @Override
     public void run() {
         for (int i = 1; i < 6; i++) {
-            System.out.println("Hello word " + i + "From Thread " + threadNumber);
+            System.out.println("Hello word " + i + " From Thread " + threadNumber);
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
