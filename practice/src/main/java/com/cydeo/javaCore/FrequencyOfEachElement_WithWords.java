@@ -12,12 +12,13 @@ public class FrequencyOfEachElement_WithWords {
 
         Map<Integer, String> map = new HashMap<>();
 
-        for(int each: arr){
+        for(int each: arr) {
             int count = 0;
-            for(int n : arr){
-                if (each == n);
+            for (int n : arr) {
+                if (each == n){
                 count++;
             }
+        }
             if(count>10){
                 map.put(each, words[each]);
             }else{
