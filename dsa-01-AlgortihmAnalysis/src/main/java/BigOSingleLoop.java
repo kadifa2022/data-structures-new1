@@ -26,7 +26,7 @@ public class BigOSingleLoop {
         }
         endTime=System.currentTimeMillis();
 
-        System.out.println( "Nested Loop Number of operations : "+numberOfOperations + " in "+ (endTime-startTime) +" miliseconds");
+        System.out.println( "Nested Loop Number of operations : "+numberOfOperations + " in "+ (endTime-startTime) +" milliseconds");
         // Task 2 End...................
 // ......................................................................................................
         // Task 3 Three Nested Loops...................
@@ -56,7 +56,7 @@ public class BigOSingleLoop {
         }
         endTime=System.currentTimeMillis();
 
-        System.out.println( "Nested Loop (n* m) Number of operations : "+numberOfOperations + " in "+ (endTime-startTime) +" miliseconds");
+        System.out.println( "Nested Loop (n * m) Number of operations : "+numberOfOperations + " in "+ (endTime-startTime) +" miliseconds");
         // Task 4 End...................
 
         // Task 4.5 N and M Consecutive Loops O(n+m)...................
@@ -77,7 +77,7 @@ public class BigOSingleLoop {
         // Task 5 Logarithmic Complexity...................
         numberOfOperations=0;
         startTime=System.currentTimeMillis();
-        for (int i = 1; i < n ; i*=2) {
+        for (int i = 1; i < n ; i*=2) {//value is doubling every iteration
             numberOfOperations+=1;
         }
         endTime=System.currentTimeMillis();
