@@ -1,4 +1,4 @@
-package com.cydeo;
+package com.cydeo.dsa01AlgorithmAnalysis;
 
 import java.util.ArrayList;
 import java.util.List;
