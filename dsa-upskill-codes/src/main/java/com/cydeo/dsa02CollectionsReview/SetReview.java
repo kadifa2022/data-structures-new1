@@ -17,10 +17,10 @@ public class SetReview {
         System.out.println(firstRepeatingChar(str));
     }
 
-    public static Character firstRepeatingChar(String str){//time of complexity O(n)
+    public static Character firstRepeatingChar(String str){//time of complexity O(n)// running steps
 
         //create a hashSet
-        Set<Character> chars = new HashSet<>();// space complexity O(n)// because i created another data struction
+        Set<Character> chars = new HashSet<>();// space complexity O(n)// because i created another data Structure//additional space in memory
         //iterate over the char Array and add chars into hashSet
         for(Character ch:str.toCharArray()) if (!chars.add(ch)) return ch;
 
