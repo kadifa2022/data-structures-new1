@@ -1,4 +1,4 @@
-package com.cydeo;
+package com.cydeo.dsa01AlgorithmAnalysis;
 
 public class BigO_SOLID {
     public static void main(String[] args) {
