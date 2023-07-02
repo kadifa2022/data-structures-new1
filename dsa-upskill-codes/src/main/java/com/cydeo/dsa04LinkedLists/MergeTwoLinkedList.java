@@ -4,7 +4,7 @@ import com.cydeo.dsa04LinkedLists.Node;
 
 public class MergeTwoLinkedList {
 
-    public static Node MergeLinkedLists(Node headOne, Node headTwo){
+    public static Node mergeLinkedLists(Node headOne, Node headTwo){
         Node p1 = headOne;
         Node p1Prev= null;
         Node p2 = headTwo;
