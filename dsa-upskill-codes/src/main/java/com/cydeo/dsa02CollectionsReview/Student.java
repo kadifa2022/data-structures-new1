@@ -39,6 +39,8 @@ public class Student {
         return name.equals(student.name);
     }
 
+    // we need to implement hashcode and equals methode together to avoid duplicates in Hashset, Hashcode , HashMap
+
     @Override
     public int hashCode() {// Why we need to implement hashCode?
         int result = id;
