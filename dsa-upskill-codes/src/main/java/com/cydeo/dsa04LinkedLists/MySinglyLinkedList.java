@@ -25,7 +25,7 @@ public class MySinglyLinkedList {
     }
 
     public int getKthItemFromLast(int k) {
-        // create 2 pointers
+        // create 2 pointers// patterns or strategy
         Node ptr1 = head;
         Node ptr2 = head;
 
