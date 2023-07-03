@@ -2,7 +2,7 @@ package com.cydeo.dsa01AlgorithmAnalysis;
 
 import java.util.Arrays;
 
-public class Assigment1_TwoSumAnotherOptimalSolution {
+public class Assigment1_TwoSumAnotherOptimalSolution {// Umran's solution
 // this is not good solution// this solution works with sorted arrays
     public static void main(String[] args) {
         int[] nums= {2,7,11,15};
