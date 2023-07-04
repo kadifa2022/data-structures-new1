@@ -20,15 +20,15 @@ public class LinkedListDemo {
         System.out.println("Node3's address is: " + node3 + "Node3' next address is " + node3.next);
         System.out.println("Node4's address is: " + node4 + "Node4' next address is " + node4.next);
 
-        Node current;
-        Node head = node1;
+        Node current; //temp var
+        Node head = node1; // value for head1
         current = head;
         while (current != null) {
             System.out.println("Id of node is: " + current.id);
             current=current.next;
         }*/
 
-        System.out.println(node1);
+        System.out.println(node1.id);
         System.out.println(node1.next.id);
 
         Node2 a = new Node2(new Car("Audi", "White"));
