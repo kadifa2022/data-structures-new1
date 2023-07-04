@@ -66,7 +66,7 @@ public class LinkedListCycleI_II {
     public ListNode detectCycle2(ListNode head){
         Set<ListNode> seenNodes = new HashSet<>();
         ListNode node = head;
-        while ((node != null)) {
+        while (node != null) {
 
             if(seenNodes.contains(node)){
                 return node;
