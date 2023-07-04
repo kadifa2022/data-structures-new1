@@ -23,6 +23,42 @@ public class MySinglyLinkedList {
         }
 
     }
+    void deleteById(int id){
+        //check if is empty list
+        if(isEmpty()) System.out.println("List is empty");
+        // assign prev and current with the head
+        Node prev = head;
+        Node current = head;
+        // while loop to start looping if is not empty list
+        while (current != null){
+            // if the current id == id // there is match continue
+            if(current.id ==id){
+                // need to handle 3 cases and decrease size --
+                if(current == head){
+                    head=current.next;
+                    current.next=null;
+                }
+               else if(current==tail){
+                    tail = prev;
+                    prev.next=null;
+                }
+               else{
+                   prev.next = current.next;
+                   current.next= null;
+                }
+               size--;
+
+            }
+            // after deletion move to next node
+            prev= current;
+            current=current.next;
+        }
+
+
+
+
+    }
+
 
     void printNodes() {
         Node current = head;//starting from head
@@ -35,4 +71,6 @@ public class MySinglyLinkedList {
 
         }
     }
+
+
 }
