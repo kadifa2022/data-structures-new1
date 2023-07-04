@@ -142,7 +142,7 @@ public class MySinglyLinkedList {
         while (current != null) {
             if (current.next == null) System.out.println(current.id + "=> null");
             else {
-                System.out.println(current.id + "=>");
+                System.out.print(current.id + "=>");
             }
             current = current.next;
         }
