@@ -19,5 +19,11 @@ public class OrdinaryTask {
         double result3 = 1 / time + 3 * mass;
         double resul4 = 1/(time + 2 * mass);
 
+        int i =-10;
+        boolean res = (i>0 && i++<10);
+        System.out.println(res);
+
+
     }
+
 }
