@@ -26,7 +26,7 @@ public class MySinglyLinkedList {
     void deleteById(int id){
         //check if is empty list
         if(isEmpty()) System.out.println("List is empty");
-        // assign prev and current with the head
+        // assign prev and current with the head// resetting
         Node prev = head;
         Node current = head;
         // while loop to start looping if is not empty list
