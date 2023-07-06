@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="practice" />
         <module name="dsa-06-AlgorithmProblems" />
+        <module name="java-labs" />
         <module name="dsa-10-Search" />
         <module name="Java_Programming_Language" />
         <module name="dsa-02-Arrays" />
