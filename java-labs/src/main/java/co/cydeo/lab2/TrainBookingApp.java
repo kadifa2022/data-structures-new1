@@ -1,8 +1,8 @@
 package co.cydeo.lab2;
 
-import jdk.swing.interop.SwingInterOpUtils;
 
-import java.util.Scanner;//* you csn use alll classes belongs to java.util. package
+
+import java.util.Scanner;//* you csn use all classes belongs to java.util. package
 
 public class TrainBookingApp {
 
