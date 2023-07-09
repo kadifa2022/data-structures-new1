@@ -1,4 +1,4 @@
-package co.cydeo.lab3_Loops_Methods;
+package co.cydeo.lab3pizzaApp1_Loops_Methods;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Task {
         System.out.println("Please log in before placing the order");
 
         // create 3 variables named email(String), account number(int), password and assign values
-        String email= "mike@gmail.com";
+        String email = "mike@gmail.com";
         int accountNumber = 123;// account number can be between 100 amd 1000
         String password = "password";
 
@@ -19,7 +19,7 @@ public class Task {
         System.out.println("Please choose your log in type. Email:1 , Account Number:2");
         int loginType = scanner.nextInt();
 
-        for (int i = 3; i > 0; ) {// infinite loop and we put everything inside
+        for (int i = 3; i > 0; ) {// infinite loop// we put everything inside loop switch, if statement, methods
             // create the selection flow for the login type
             // switch we are using for exact match
             switch (loginType) {
@@ -28,13 +28,10 @@ public class Task {
                     System.out.println("Enter your email: ");
                     String givenEmail = scanner.next();
 
-
-
-                   if(!isEmailValid(givenEmail) ){
-                       System.out.println("Invalid Email. Please try again..");
-                       continue;
-                   }
-
+                    if (!isEmailValid(givenEmail)) {
+                        System.out.println("Invalid Email. Please try again..");
+                        continue;
+                    }
 
                     //Enter you password
                     System.out.println("Please enter your password: ");
@@ -47,26 +44,61 @@ public class Task {
 
                     } else {
 
-                        if(i!=1){//ask again if i=3
-                            System.out.println("Invalid Credential !! left " + (i-1) + "chances to try");
+                        if (i != 1) {//ask again if i=3
+                            System.out.println("Invalid Credential !! left " + (i - 1) + "chances to try");
                             i--;
                             continue;// do not execute anything after this point
                             //break: stop the loop here, and exit the loop
                             //return: stop the method that you are inside
 
-                    }else {
+                        } else {
                             System.out.println("Your account is locked- try again tomorrow");
                             System.exit(0);// close the execution of JVM
                         }
-                        }
+                    }
                 case 2:
-                    System.out.println("Account number is chosen");
-                    break;// stop the switch case
+                    System.out.println("Please type your account number");
+                    int an = scanner.nextInt();
+                    boolean checkAccountNo = an >= 100 && an < 1000;
+
+                    // invalid and try again
+                    if (!checkAccountNo) {
+                        System.out.println("Invalid Account Number. Try again");
+                        continue;
+
+                    }
+                    System.out.println("Please enter your password");
+                    givenPassword = scanner.next();
+
+                    //check if login successfully
+                    if (an == accountNumber && password.equals(givenPassword)) {
+                        System.out.println("Successfully logged in with password");
+                        break;
+
+                    } else {
+
+                        if (i != 1) {//ask again if i=3
+                            System.out.println("Invalid Credential !! left " + (i - 1) + "chances to try");
+                            i--;
+                            continue;// do not execute anything after this point
+                            //break: stop the loop here, and exit the loop
+                            //return: stop the method that you are inside
+
+                        } else {
+                            System.out.println("Your account is locked- try again tomorrow");
+                            System.exit(0);// close the execution of JVM
+                        }
+
+
+                        break;// stop the switch case
+                    }
             }
             break;// to stop for loop
-        }
 
+        }
     }
+
+
     public static boolean isEmailValid(String givenEmail) {
 
 
