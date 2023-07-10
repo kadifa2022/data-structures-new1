@@ -1,5 +1,7 @@
 package co.cydeo.lab5_String_Loop_ifStatement;
 
+import java.util.Locale;
+
 public class FrequencyOfWord {
 
     public static void main(String[] args) {// interview ?
@@ -27,7 +29,8 @@ public class FrequencyOfWord {
 
         String sentence = "Java Java Java Java Python C#  Ruby";
 
-        String temp = sentence.replace("Java", "abc");//"abc abc abc abc Python C#  Ruby"
+       // String temp = sentence.toLowerCase().replace("java", "abc");
+       String temp = sentence.replace("Java", "abc");//"abc abc abc abc Python C#  Ruby"
 
         int totalNumberOfJava = sentence.length() - temp.length();
         System.out.println(totalNumberOfJava);
