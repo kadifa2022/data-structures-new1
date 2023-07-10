@@ -58,6 +58,25 @@ public class StringMethodsPractice {
         s = s.replaceFirst("Thursday", "Wednesday");
         System.out.println(s);
 
+        System.out.println("----------------SubString()-----------------------------------");
+
+        String email = "cydeo_school@gmail.com";
+        int beginningIndex = email.indexOf('@') + 1;// beginning index//will return g of gmail.
+        int endingIndex = email.lastIndexOf('.');
+
+       String domain =  email.substring(beginningIndex, endingIndex);
+       System.out.println(domain);
+
+       System.out.println("-----------------substring without last index ----------------------------");
+
+       String s2 = "I study at Cydeo school ";// substring from Cydeo to the end of the sentence
+
+       String schoolName = s2.substring(s2.indexOf('C'));// if we are creating substring from particular word to the end of sentence no need to use ending index
+        System.out.println(schoolName);
+
+
+
+
 
 
 
