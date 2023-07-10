@@ -2,7 +2,7 @@ package co.cydeo.lab5_String_Loop_ifStatement;
 
 public class FrequencyOfWord {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {// interview ?
 
 /*
         String sentence = "Java Java Java Python C#  Ruby";

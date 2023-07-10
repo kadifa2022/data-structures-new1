@@ -47,9 +47,16 @@ public class StringMethodsPractice {
         System.out.println(" ---------------------Replace----------------------");
 
         String sentence = "Today is Thursday, and Thursday is a Lab day";//GC
-
-      sentence =  sentence.replace("Thursday", "Friday");// NEW SENTENCE
+        sentence =  sentence.replace("Thursday", "Friday");// NEW SENTENCE
         System.out.println(sentence);
+
+
+        System.out.println(" ---------------------Replace-First---------------------");
+
+        String s = "Today is Thursday, and tomorrow is Thursday";// original sentence
+        // assign back to new object // if we don't assign back it will be same sentence
+        s = s.replaceFirst("Thursday", "Wednesday");
+        System.out.println(s);
 
 
 
