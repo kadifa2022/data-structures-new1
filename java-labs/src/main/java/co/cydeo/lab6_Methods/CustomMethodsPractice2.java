@@ -15,7 +15,9 @@ public class CustomMethodsPractice2 {
         System.out.println("----------right2------------");
         System.out.println(right2("Java"));
 
-        System.out.println("----------------------");
+        System.out.println("-----------FrontAgain -----------");
+        System.out.println(frontAgain("Java"));
+
         System.out.println("----------------------");
         System.out.println("----------------------");
 
@@ -59,6 +61,29 @@ public class CustomMethodsPractice2 {
         String s2 = str.substring(0, str.length()-2);//"Hel"
                 return s1+s2;//"loHel"
     }
+
+    public static boolean frontAgain(String str){
+        if(str.length()<2){// if the string is less than 2 characters
+            return false;
+        }
+
+        String firstTwoChars = str.substring(0,1);
+        String lastTwoChars = str.substring(str.length()-2);
+
+
+        //return str.endsWith(firstTwoChars);// second solution
+        return firstTwoChars.equals(lastTwoChars);
+
+
+        //third solution
+        // comparing if the first 2 character of the string equals to the last 2 characters of the string
+       // return str.substring(0,2).equals(str.substring(str.length()-2));
+
+
+    }
+
+
+
 
 
 
