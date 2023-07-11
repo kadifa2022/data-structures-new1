@@ -74,6 +74,35 @@ public class StringMethodsPractice {
        String schoolName = s2.substring(s2.indexOf('C'));// if we are creating substring from particular word to the end of sentence no need to use ending index
         System.out.println(schoolName);
 
+        System.out.println("------------------equals(), equalsIgnoreCase()--------");
+
+        // equals() is in every single Object
+        // equalsIgnoreCase()-> only unique for  String class
+        // instant method each object can have different print copy
+
+        String a1 = "Dog";
+        String a2= "DOG";
+        System.out.println(a1.equals(a2));// false
+        System.out.println(a1.equalsIgnoreCase(a2)); // true
+
+        System.out.println("---------contains() and equals() ---------------");
+        String s3 = "Java is my favorite programing language";
+
+        System.out.println(s3.equals("Java"));
+        System.out.println(s3.contains("Java"));// Does the string contains / included in string
+        s3.trim();
+
+        System.out.println("--------------StartsWith -prefix-------------------");
+
+        String w = "Cydeo School";
+        System.out.println(w.startsWith("Cydeo"));// true /false
+        System.out.println(w.endsWith("ool"));
+
+
+
+
+
+
 
 
 
