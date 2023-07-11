@@ -36,4 +36,33 @@ public class StringUtility {
 
         }
 
+        public static String reverse(String word){
+            String result = "";
+                                                      // i: index number of the string (word) starting from last index
+            for (int i = word.length()-1; i >=0 ; i--) {
+                                                         //character: starting from last character to the first character
+                char each = word.charAt(i);
+                result +=each;                             //concatenating each character to result string
+
+            }
+            return result;
+        }
+
+        public static String removeDup(String str){
+            String result ="";
+            for (int i = 0; i < str.length(); i++) {
+                char each = str.charAt(i);
+                if(!result.contains("" +each)){
+                    result +=each;
+                }
+
+            }
+            return result;
+        }
+
+
+
+
+
+
 }
