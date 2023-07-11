@@ -21,7 +21,8 @@ public class StringUtility {
 
  */
 
-
+      // return the frequency of the given word from the given sentence
+        //int returns how many
         public static int frequency(String sentence, String word){
 
                 int count= 0;

@@ -16,10 +16,15 @@ public class CustomMethodsPractice2 {
         System.out.println(right2("Java"));
 
         System.out.println("-----------FrontAgain -----------");
-        System.out.println(frontAgain("Java"));
+        System.out.println(frontAgain("Edited"));
 
-        System.out.println("----------------------");
-        System.out.println("----------------------");
+        System.out.println("------------countHi and used frequency() from StringUtility custom class----------");
+        System.out.println(countHi("Hi hi Hi Hi  Hi yes yes "));
+
+        System.out.println("------------------catDog -------------------");
+
+        System.out.println(catDog("cat dog cat dog cat dog "));
+
 
     }
 
@@ -81,6 +86,30 @@ public class CustomMethodsPractice2 {
 
 
     }
+
+    public static int countHi(String str){// calling methode from utility class
+        return  StringUtility.frequency(str, "Hi");
+
+
+    }
+
+    public static boolean catDog(String str){
+
+        str=str.toLowerCase(); // converting string to lower case
+
+       int countCat = StringUtility.frequency(str, "cat");// frequency of cat and dog separately
+       int countDog = StringUtility.frequency(str, "dog");
+       // comparing if is even
+       return countCat == countDog;
+
+
+
+
+
+
+    }
+
+
 
 
 
