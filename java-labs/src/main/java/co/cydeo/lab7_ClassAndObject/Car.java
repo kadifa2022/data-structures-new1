@@ -19,15 +19,12 @@ public class Car {
 
 
 
-//    @Override
-//    public String toString() {
-//        return "Car{" +
-//                "brand='" + brand + '\'' +
-//                ", model='" + model + '\'' +
-//                ", year=" + year +
-//                ", color='" + color + '\'' +
-//                ", price=" + price +
-//                '}';
-//    }
+     public String toString() {return brand + " " + model + " " + year + " " + color + " " + price; }
+
+    public void drive(){
+        System.out.println("Driving " + brand + " " +model);
+    }
+
 }
+
 

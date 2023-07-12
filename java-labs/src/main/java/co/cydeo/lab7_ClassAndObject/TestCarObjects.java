@@ -36,6 +36,8 @@ public class TestCarObjects {
         System.out.println(car2);
         System.out.println(car3);
 
+        car1.drive();
+
 
 
     }
