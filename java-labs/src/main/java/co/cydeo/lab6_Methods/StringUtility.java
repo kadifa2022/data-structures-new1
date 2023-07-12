@@ -33,8 +33,19 @@ public class StringUtility {
                 }
                 return count;
 
-
         }
+        //return the char frequency of given String word // " aabacde" "a
+        public static int frequency(String str, char ch){
+            int count =0;
+            for (int i = 0; i < str.length(); i++) {
+                if(str.charAt(i) ==ch){
+                    count++;
+                }
+
+            }
+                   return count ;
+        }
+
 
         public static String reverse(String word){
             String result = "";
