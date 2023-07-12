@@ -30,14 +30,19 @@ public class CustomMethodsPractice4 {
         System.out.println("-----------------------------");
 
         String s = "aaaabbc";// "a4b2c1   // find the frequency of every single element
-        String nonDup = StringUtility.removeDup(s);
+        String nonDup = StringUtility.removeDup(s);// abc
 
         String result="";
 
         for (int i = 0; i < nonDup.length() ; i++) {
-            char ch = nonDup.charAt(i);
-            int f = StringUtility.frequency(s, ch);
+            /*
+            char ch = nonDup.charAt(i);            //abc
+            int f = StringUtility.frequency(s, ch);//421
             result += ""+ ch + f;
+            */
+
+            result += ""+nonDup.charAt(i) + StringUtility.frequency(s, nonDup.charAt(i));
+
         }
         System.out.println(result);
 
