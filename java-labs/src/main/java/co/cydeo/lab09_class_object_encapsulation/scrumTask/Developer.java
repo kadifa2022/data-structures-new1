@@ -1,6 +1,9 @@
 package co.cydeo.lab09_class_object_encapsulation.scrumTask;
 
-public class Tester {
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Developer {
 
     private String name;
     private int age;
@@ -8,15 +11,7 @@ public class Tester {
     private String id;
     private String jobTitle;
     private double hourlyRate;
-
-    public Tester(String name, int age, char gender, String id, String jobTitle, double hourlyRate) {
-        setName( name);
-        setAge(age);
-        setGender(gender);
-        setId(id);
-        setJobTitle(jobTitle);
-        setHourlyRate(hourlyRate);
-    }
+    private String programmingLanguage;
 
 
 
@@ -88,45 +83,68 @@ public class Tester {
         this.hourlyRate = hourlyRate;
     }
 
+    public String getProgrammingLanguage() {
+        return programmingLanguage;
+    }
+
+    public void setProgrammingLanguage(String programmingLanguage) {
+
+        ArrayList<String> programmingLanguages= new ArrayList<>();
+        programmingLanguages.addAll(Arrays.asList("Java", "JavaScript", "Python", "Ruby", "C#", "C++", "Swift"));
+        if(!programmingLanguages.contains(programmingLanguage)){
+            System.err.println("Invalid programming language: " + programmingLanguage);
+            System.exit(1);
+        }
+        this.programmingLanguage = programmingLanguage;
+    }
+
+
+
 
     public double getSalary(){
         return hourlyRate * 40 *52;
     }
-    public void testing(){
-        System.out.println(name+ "Tester is testing Java application");
+    public void fixingBug(){
+        System.out.println(name+ "Programmer is fixingBugs in Java application");
     }
 
 
-    @Override
-    public String toString() {
-        return "Tester{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", gender=" + gender +
-                ", id='" + id + '\'' +
-                ", jobTitle='" + jobTitle + '\'' +
-                ", salary=" + getSalary() +
-                '}';
-    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
 /*
-1. create a class named Tester
-    Variables:
-    name, age , gender, employeeId, jobTitle, hourlyRate
+2. create a class named Developer
 
-    Encapsulate all fields
-    Conditions for setter the fields
-    1.name can not be set to null/ empty/ blank
-    2. age can not be less than 18
-    3.gender can only be set to 'M' or 'F'
-    4. jobTitle can not be set to null/empty/blank
-    5. hourlyRate can not be negative
-
-    add constructor that can set all the fields when an object is created
-
-    Methods:
-    getSalary(); returns the annual salary
-    testing()
+     Attributes:
+     Conditions for setting the fields
+     1.name can not be set to null/empty/blank
+     2.age can not be less than 18
+     3.gender only can be set to 'M' or 'F'
+     5.jobTitle can not be set to null/empty/blank
+     6.hourlyRate can not be negative
+     7.programingLanguage must be one of those programing language:
+           languages={"Java", "JavaScript", "Python", "Ruby", "C#", "C++", "Swift"}
+    Method:
+    getSalary():returns the annual salary
+    coding()
+    fixingBug()
     toString()
 
-    */
+
+
+
+
+
+ */
