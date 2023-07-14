@@ -87,6 +87,14 @@ public class Main {
                     }
                     break;
                 case 3:
+
+                    ArrayList<Split > splitList = calculateSplitByUser(expenseList);
+                    double totalAmount = 0;
+                    for(Split split : splitList){
+                        totalAmount +=split.amount;
+                    }
+                    makeSplit(totalAmount, splitList);
+
                     System.out.println("");
                     break;
                 case 4:
@@ -101,6 +109,51 @@ public class Main {
 
         }
 
+    }
+
+    public static void makeSplit(double totalAmount, ArrayList<Split> splitList) {
+        double amount = totalAmount/splitList.size(); // how much each person
+        for (Split split: splitList) {
+            if(split.amount>amount){
+                System.out.println(split.username + "needs to take back " + (split.amount - amount));
+            }else {                                                     // -1 means needs to give back
+                System.out.println(split.username + "needs to give " + (-1 *(split.amount-amount)));
+            }
+
+        }
+
+
+    }
+
+    public static ArrayList<Split> calculateSplitByUser(ArrayList<Expense> expenseList) {
+        ArrayList<Split> splitList = new ArrayList<>();// split table DB ///FOR EACH PERSON
+
+        for (Expense expense:expenseList) {
+
+            Split split = existSplitList(expense.user, splitList);
+            if(split != null){
+                split.amount += expense.amount;
+            }else{
+                Split  willBeAdded = new Split();
+                willBeAdded.username = expense.user;
+                willBeAdded.amount=expense.amount;
+                splitList.add(willBeAdded);
+            }
+
+        }
+
+
+        return splitList;
+    }
+
+    public static Split existSplitList(String userName, ArrayList<Split> splitList) {
+        for (Split split: splitList) {
+            if(split.username.equals(userName)){
+                return split;
+            }
+
+        }
+        return null;
     }
 
 
