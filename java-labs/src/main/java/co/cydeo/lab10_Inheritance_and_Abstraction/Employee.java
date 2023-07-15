@@ -1,6 +1,6 @@
 package co.cydeo.lab10_Inheritance_and_Abstraction;
 
-public abstract class  Employee extends Person{
+public abstract class  Employee extends Person{// meant to be inherited
 
     private final String id;
     private String jobTitle;
