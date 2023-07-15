@@ -18,19 +18,19 @@ public  class Developer extends Employee implements ScrumMember, WorkFromHome{
 
     @Override
     public void dailyStandUp() {
-        System.out.println(" planning ");
+        System.out.println(" planning meetings");
 
     }
 
     @Override
     public void springPlanning() {
-        System.out.println("Planning");
+        System.out.println("Planning springs ");
 
     }
 
     @Override
     public void workFromHome() {
-        System.out.println();
+        System.out.println(getName() + " is working from home");
 
 
     }
