@@ -1,6 +1,8 @@
 package co.cydeo.lab09_class_object_encapsulation.scrumTask;
 
+import javax.sql.DataSource;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class ScrumTeam {
@@ -11,6 +13,8 @@ public class ScrumTeam {
     private ArrayList<Tester> testers = new ArrayList<>();// ScrumTeam HAS Tester and Developers
     private ArrayList<Developer> developers = new ArrayList<>();
     private int daysOfSprint;
+
+
 
 
     public String getPO() {
@@ -67,5 +71,43 @@ public class ScrumTeam {
             System.err.println(err);
             System.exit(1);
         }
+    }
+
+    public ScrumTeam(String PO, String BA, String SM, int daysOfSprint) {
+        setPO(PO);
+        setBA(BA);
+        setSM(SM);
+        setDaysOfSprint(daysOfSprint);
+    }
+
+    public void addTester(Tester tester){
+        testers.add(tester);
+    }
+    public void addTester(Tester[] testers){
+        this.testers.addAll(Arrays.asList(testers));
+    }
+    public void addDeveloper(Developer developer){
+        developers.add(developer);
+    }
+    private void addDeveloper(Developer[] developers){
+        this.developers.addAll(Arrays.asList(developers));
+    }
+
+    public void removeTester(String id){
+        testers.removeIf(p->p.getId().equals(id));
+    }
+    public void removeDeveloper(String id){
+        developers.removeIf(p->p.getId().equals(id));
+    }
+
+    @Override
+    public String toString() {
+        return "ScrumTeam{" +
+                "PO='" + PO + '\'' +
+                ", BA='" + BA + '\'' +
+                ", SM='" + SM + '\'' +
+                ", testers=" + testers.size() +
+                ", developers=" + developers.size() +
+                '}';
     }
 }
