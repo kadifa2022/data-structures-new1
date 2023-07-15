@@ -1,6 +1,6 @@
 package co.cydeo.lab11_exception_and_polymorphism.restuarant_task;
 
-public class Employee {
+public abstract class Employee {
 
     private String name;
     private int age;
@@ -17,7 +17,9 @@ public class Employee {
             throw new NoSuchPersonException("Gender has to be either 'M' or 'F' ");
         }
         this.gender = gender;
-
+        if (id ==null || id.isEmpty()){
+            throw  new IllegalArgumentException("Id of the employee can not be negative or empty");
+        }
         this.id = id;
         setJobTitle(jobTitle);
         setSalary(salary);
@@ -75,5 +77,20 @@ public class Employee {
             throw new NoSuchJobException("Salary can not be negative : " + salary);
         }
         this.salary = salary;
+    }
+
+
+    public  abstract void work();
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() +"{"+
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", id='" + id + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", salary=$" + salary +
+                '}';
     }
 }
