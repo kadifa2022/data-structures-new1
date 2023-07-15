@@ -13,7 +13,15 @@ public class Developer {
     private double hourlyRate;
     private String programmingLanguage;
 
-
+    public Developer(String name, int age, char gender, String id, String jobTitle, double hourlyRate, String programmingLanguage) {
+        setName(name);
+        setAge(age);
+        setGender(gender);
+        setId(id);
+        setJobTitle(jobTitle);
+        setHourlyRate(hourlyRate);
+        setProgrammingLanguage( programmingLanguage);
+    }
 
     public String getName(){//just for read only
         return name;
@@ -99,28 +107,31 @@ public class Developer {
     }
 
 
-
-
     public double getSalary(){
         return hourlyRate * 40 *52;
     }
-    public void fixingBug(){
-        System.out.println(name+ "Programmer is fixingBugs in Java application");
+
+    public void coding(){
+        System.out.println(name + " is coding" + programmingLanguage);
     }
 
 
+    public void fixingBug(){
+        System.out.println(name+ " is fixing Bugs in Java application");
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "Developer{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", id='" + id + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", salary=" + getSalary() +
+                ", programmingLanguage='" + programmingLanguage + '\'' +
+                '}';
+    }
 }
 
 
