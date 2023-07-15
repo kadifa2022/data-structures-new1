@@ -2,8 +2,8 @@ package co.cydeo.lab11_exception_and_polymorphism.restuarant_task;
 
 public class Chef extends Employee{
 
-    public Chef(String name, int age, char gender, String id, double salary) {
-        super(name, age, gender, id, "Chef", salary);
+    public Chef(String name, int age, char gender, String id,String jobTitle, double salary) {
+        super(name, age, gender, id, jobTitle, salary);
     }
 
     @Override
