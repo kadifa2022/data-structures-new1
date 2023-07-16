@@ -18,4 +18,8 @@ public class Server extends Employee{
     public void cleanTable(){
         System.out.println(getName()+ "is cleaning tables");
     }
+    public Chef promoteToChef(){
+        return new Chef(getName(), getAge(),getGender(),getId(),"Head Chef", getSalary());
+
+    }
 }
