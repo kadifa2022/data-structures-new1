@@ -69,6 +69,14 @@ public class LocalRestaurant {
             System.out.println(eachServer);
 
         }
+        System.out.println("--------------------");
+        Server s= null;
+        Chef c= null;
+
+        restaurant.hireServer(s);
+        restaurant.hireChef(c);
+
+        System.out.println(restaurant);// will give us null pointer exception, because we set condition can not be null
 
 
 
