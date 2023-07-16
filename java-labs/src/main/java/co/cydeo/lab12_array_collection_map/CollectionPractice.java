@@ -72,9 +72,20 @@ public class CollectionPractice {
 
         List<String > words = new ArrayList<>();
         words.addAll(Arrays.asList("Java", "Java","Java" , "Ruby", "C++", "C#"));
-
-        words.removeIf(p->p.equalsIgnoreCase("Java"));
+        // predicate return boolean ->
+        //words.removeIf(p->p.equalsIgnoreCase("Java"));
+        //removeIf()-> use lambda
+        words.removeIf(p->p.toLowerCase().startsWith("j") && p.toLowerCase().endsWith("a"));
         System.out.println(words);
+
+        // forEach()takes consumer functional Interface and returning nothing
+        //we use lambda expression just for overriding abstract method
+        words.forEach(c->{
+            if(!c.equals("Java")) {
+                System.out.println(c);
+
+            }
+        });
 
 
 
