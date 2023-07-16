@@ -20,6 +20,8 @@ int n = 16;
 4/2 =2
 2/1 = 1
 
+recursion after calling new method, storing in system stack
+
 
  */
 }
