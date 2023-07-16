@@ -29,20 +29,47 @@ public class LocalRestaurant {
         }
 
         System.out.println("----------------------------");
+        Server server = new Server("FATA ", 20, 'F', "002", 50.00);
+        Chef chef = new Chef("Josh", 32, 'M', "B02", "Head Chef", 70000);
 
 
         Restaurant restaurant = new Restaurant("Josh", "7925 Jones Branch Dr. " ,4.5);
 
         System.out.println(restaurant);
         // adding employee restaurant and casting employee to Server and chef
+
         restaurant.hireServer((Server)employee1);
         restaurant.hireChef((Chef)employee2);
 
         //restaurant.hireChef(employee1);// null pointer exception
 
-        restaurant.hireChef(((Server) employee1).promoteToChef());
+       // restaurant.hireChef(((Server) employee1).promoteToChef());
+
+
+        restaurant.hireServer(server);
+        restaurant.hireChef(chef);
 
         System.out.println(restaurant);
+/*
+        restaurant.terminateServer("A01");
+        restaurant.terminateChef("B02");
+        System.out.println(restaurant);
+
+ */
+
+        System.out.println("---------------------------------------");
+
+        for (Chef eachChef : restaurant.getChefs()) {// iterate  each chef array
+            System.out.println(eachChef);
+
+        }
+        System.out.println("-----------------------------------------------");
+
+        for (Server eachServer : restaurant.getServers()) {
+            System.out.println(eachServer);
+
+        }
+
 
 
 
