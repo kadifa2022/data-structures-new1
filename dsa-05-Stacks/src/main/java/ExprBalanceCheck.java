@@ -4,20 +4,20 @@ public class ExprBalanceCheck {
     }
     public static boolean balanceCheck (String expr){
         // create a stack
-        MyStack<Character> myStack=new MyStack<>();
+        MyStack<Character> myStack=new MyStack<>(); // create stack
 
         // iterate over expr
         for (int i = 0; i <expr.length() ; i++) {
             Character ch=expr.charAt(i);
             // filter non player chars
             if (ch!='('&& ch!='['&& ch!='{'&& ch!=')'&& ch!=']'&& ch!='}' ) continue ;
-            // if it is a symbol tobe processed
+            // if it is a symbol balanced to be processed
                // if opening symbol push it to the stack
             if(ch=='('|| ch=='['|| ch=='{') {
                 myStack.push(ch);
                 continue;
             }
-            // at this point this is a closing symbol
+            // at this point this is a closing symbol (pop) the top and compare what we have
             // stack shouldn't be empty
             if (myStack.isEmpty()) return false;
             switch(ch) {
@@ -33,7 +33,7 @@ public class ExprBalanceCheck {
             }
         } // end of for
 
-        // return if stack is empty
+        // return if stack is empty why? all matched ()
         return myStack.isEmpty();
     }
 }
