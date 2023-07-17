@@ -8,6 +8,8 @@ public class Address {
     private String zipCode;
     private String state;
 
+    //initialize instance variable
+
     public Address(String streetNumber, String streetName, String additionalAddressLine, String zipCode, String state) {
         this.streetNumber = streetNumber;
         this.streetName = streetName;
@@ -36,4 +38,5 @@ public class Address {
     public String getState() {
         return state;
     }
+
 }
