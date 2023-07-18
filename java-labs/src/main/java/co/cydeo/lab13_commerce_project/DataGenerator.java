@@ -1,5 +1,14 @@
 package co.cydeo.lab13_commerce_project;
 
+import co.cydeo.lab13_commerce_project.blance.Balance;
+import co.cydeo.lab13_commerce_project.blance.CustomerBalance;
+import co.cydeo.lab13_commerce_project.blance.GiftCardBalance;
+import co.cydeo.lab13_commerce_project.category.Category;
+import co.cydeo.lab13_commerce_project.category.Electronic;
+import co.cydeo.lab13_commerce_project.category.Furniture;
+import co.cydeo.lab13_commerce_project.category.SkinCare;
+
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -16,14 +25,51 @@ public class DataGenerator {
         customer1AddressList.add(address2Customer1);
 
         Customer customer1 = new Customer(UUID.randomUUID(), "Ozzy", "ozzy@gmail.com", customer1AddressList);
-        Customer customer2 = new Customer(UUID.randomUUID(), "Mke", "ozzy@gmail.com");
+        Customer customer2 = new Customer(UUID.randomUUID(), "Mike", "ozzy@gmail.com");
        // Customer customer3 = new Customer(UUID.randomUUID(), "Ozzy", "ozzy@gmail.com", customer1AddressList);
 
-        StaticConstants_MyDataBase.CUSTOMER_LIST.add(customer1);
-        StaticConstants_MyDataBase.CUSTOMER_LIST.add(customer2);
+        StaticConstants.CUSTOMER_LIST.add(customer1);
+        StaticConstants.CUSTOMER_LIST.add(customer2);
+
+
+    }
+
+    public static void createCategory(){
+        Category category1 = new Electronic(UUID.randomUUID(), "Electronic") ;
+        Category category2= new Furniture(UUID.randomUUID(), "Furniture");
+        Category category3 = new SkinCare(UUID.randomUUID(), "SkinCare");
+
+        StaticConstants.CATEGORY_LIST.add(category1);
+        StaticConstants.CATEGORY_LIST.add(category2);
+        StaticConstants.CATEGORY_LIST.add(category3);
+
+        }
+
+        public static void createProduct(){
+        Product  product1= new Product(UUID.randomUUID(), "P5P", 299.00, 20,20, StaticConstants.CATEGORY_LIST.get(0).getId());
+        Product  product2= new Product(UUID.randomUUID(), "XBox", 199.00, 2,2, StaticConstants.CATEGORY_LIST.get(0).getId());
+        Product  product3= new Product(UUID.randomUUID(), "P5P", 299.00, 10,10, StaticConstants.CATEGORY_LIST.get(0).getId());
+
+
+        StaticConstants.PRODUCT_LIST.add(product1);
+        StaticConstants.PRODUCT_LIST.add(product2);
+        StaticConstants.PRODUCT_LIST.add(product3);
+
+
+
+    }
+    public static void createBalance(){
+        Balance customerBalance= new CustomerBalance(StaticConstants.CUSTOMER_LIST.get(0).getId(), 100.00);
+        Balance giftCardBalance = new GiftCardBalance(StaticConstants.CUSTOMER_LIST.get(1).getId(), 100.00);
+
+        StaticConstants.CUSTOMER_BALANCE_LIST.add(customerBalance);
+        StaticConstants.GIFT_CARD_BALANCE_LIST.add(giftCardBalance);
+
+    }
+
     }
 
 
 
 
-}
+
