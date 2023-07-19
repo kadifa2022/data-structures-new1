@@ -2,6 +2,8 @@ package co.cydeo.lab13_commerce_project;
 
 
 
+import co.cydeo.lab13_commerce_project.category.Category;
+
 import java.util.UUID;
 
 public class Product {
@@ -43,5 +45,14 @@ public class Product {
 
     public UUID getCategoryId() {
         return categoryId;
+    }
+
+    public String getCategoryName() throws Exception {
+        for(Category category: StaticConstants.CATEGORY_LIST){
+            if (getCategoryId().toString().equals(category.getId().toString())){
+                return category.getName();
+            }
+        }
+        throw new Exception("Category not fount, " + getName()) ;// return null if does not exist
     }
 }
