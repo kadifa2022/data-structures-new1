@@ -7,6 +7,9 @@ import co.cydeo.lab13_commerce_project.category.Category;
 import co.cydeo.lab13_commerce_project.category.Electronic;
 import co.cydeo.lab13_commerce_project.category.Furniture;
 import co.cydeo.lab13_commerce_project.category.SkinCare;
+import co.cydeo.lab13_commerce_project.discount.AmountBaseDiscount;
+import co.cydeo.lab13_commerce_project.discount.Discount;
+import co.cydeo.lab13_commerce_project.discount.RateBaseDiscount;
 
 
 import java.util.ArrayList;
@@ -48,12 +51,13 @@ public class DataGenerator {
         public static void createProduct(){
         Product  product1= new Product(UUID.randomUUID(), "P5P", 299.00, 20,20, StaticConstants.CATEGORY_LIST.get(0).getId());
         Product  product2= new Product(UUID.randomUUID(), "XBox", 199.00, 2,2, StaticConstants.CATEGORY_LIST.get(0).getId());
-        Product  product3= new Product(UUID.randomUUID(), "P5P", 299.00, 10,10, StaticConstants.CATEGORY_LIST.get(0).getId());
-
+        Product  product3= new Product(UUID.randomUUID(), "P5P", 299.00, 10,10, StaticConstants.CATEGORY_LIST.get(1).getId());
+        Product  product4= new Product(UUID.randomUUID(), "Milk ", 2.99, 110,10, UUID.randomUUID());
 
         StaticConstants.PRODUCT_LIST.add(product1);
         StaticConstants.PRODUCT_LIST.add(product2);
         StaticConstants.PRODUCT_LIST.add(product3);
+        StaticConstants.PRODUCT_LIST.add(product4);
 
 
 
@@ -64,6 +68,15 @@ public class DataGenerator {
 
         StaticConstants.CUSTOMER_BALANCE_LIST.add(customerBalance);
         StaticConstants.GIFT_CARD_BALANCE_LIST.add(giftCardBalance);
+
+    }
+
+    public static void createDiscount(){
+
+        Discount amountBaseDiscount = new AmountBaseDiscount(UUID.randomUUID(), "Buy $250 free $50",250.00, 50.00);
+        Discount rateBasedDiscount = new RateBaseDiscount(UUID.randomUUID(), "Buy $250 Free %15", 500.00,15.00);
+        StaticConstants.DISCOUNT_LIST.add(amountBaseDiscount);
+        StaticConstants.DISCOUNT_LIST.add(rateBasedDiscount);
 
     }
 
