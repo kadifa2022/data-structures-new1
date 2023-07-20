@@ -64,7 +64,7 @@ public class DataGenerator {
     }
     public static void createBalance(){
         Balance customerBalance= new CustomerBalance(StaticConstants.CUSTOMER_LIST.get(0).getId(), 100.00);
-        Balance giftCardBalance = new GiftCardBalance(StaticConstants.CUSTOMER_LIST.get(1).getId(), 100.00);
+        Balance giftCardBalance = new GiftCardBalance(StaticConstants.CUSTOMER_LIST.get(1).getId(), 200.00);
 
         StaticConstants.CUSTOMER_BALANCE_LIST.add(customerBalance);
         StaticConstants.GIFT_CARD_BALANCE_LIST.add(giftCardBalance);
