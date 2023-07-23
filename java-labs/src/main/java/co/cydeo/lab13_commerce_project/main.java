@@ -132,8 +132,17 @@ public class main {
 
                         break;
                     case 6://See cart
+                        System.out.println("Your Cart");
+                        if(!cart.getProductMap().keySet().isEmpty()){
+                            for (Product product : cart.getProductMap().keySet()) {
+                                System.out.println("Product name: " + product.getName() + "count : " + cart.getProductMap().get(product));
+                            }
+                            }else {
+                            System.out.println("Your cart is empty");
+                        }
                         break;
                     case 7://See order details
+                        printOrdersByCustomerId(customer.getId());
                         break;
                     case 8://See your address
                         break;
@@ -142,6 +151,10 @@ public class main {
                 }
 
             }
+    }
+
+    private static void printOrdersByCustomerId(UUID customerId) {
+
     }
 
     private static boolean putItemToCartIfStockAvailable(Cart cart, Product product) {
