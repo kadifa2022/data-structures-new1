@@ -7,8 +7,8 @@ public class ReverseString {
 
         String reversedStr = "";
 
-        for (int i = str.length() -1; i >= 0 ; i--) {
-            reversedStr += str.charAt(i);
+        for (int i = str.length() -1; i >= 0 ; i--) {// looping from last character to front
+            reversedStr += str.charAt(i);// concat the string
 
         }
         System.out.println(reversedStr);
