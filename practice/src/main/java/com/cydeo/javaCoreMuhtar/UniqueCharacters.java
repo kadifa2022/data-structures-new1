@@ -6,9 +6,9 @@ public class UniqueCharacters {
 
 
         // write your code
-        String uniques = "";
+        String uniques = "";   // creating empty string for unique elements
         for(int i = 0; i < str.length(); i++){
-            char ch = str.charAt(i);
+            char ch = str.charAt(i);// getting each element from string
             // condition if the character appears only one time in the string
             if(str.indexOf(ch)==str.lastIndexOf(ch)){
                 uniques +=ch;// add to uniques string
