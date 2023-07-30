@@ -1,4 +1,4 @@
-package com.cydeo.javaCore;
+package com.cydeo.javaCoreMuhtar;
 
 public class JavaAndPythonRegex {
     public static void main(String[] args) {
