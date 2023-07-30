@@ -1,4 +1,4 @@
-package com.cydeo.javaCore;
+package com.cydeo.javaCoreMuhtar;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
