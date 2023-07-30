@@ -1,4 +1,4 @@
-package com.cydeo.javaCore;
+package com.cydeo.javaCoreMuhtar;
 
 public class Array_findUniqueElement {
 
