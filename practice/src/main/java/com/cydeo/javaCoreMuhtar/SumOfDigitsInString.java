@@ -4,7 +4,7 @@ public class SumOfDigitsInString {
 
     public static void main(String[] args) {
 
-        String str = "1bc2e3gthca4";
+        String str = "1bc2e3ga4";
 
       int  sum = 0;
 
@@ -20,3 +20,15 @@ public class SumOfDigitsInString {
         System.out.println(sum);
     }
 }
+
+/*
+Write the program that can calculate sum of all the digits present in a given string.
+exp:
+String str = "1bc2e3ga4";
+
+output:
+ 10
+
+
+
+ */
