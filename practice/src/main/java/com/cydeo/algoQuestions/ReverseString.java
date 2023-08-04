@@ -13,3 +13,17 @@ public class ReverseString {
     }
 
 }
+/*
+
+Write a program that can reverse a given String. The solution should accurately preserve the character order,
+including whitespaces and special characters, while maintaining case sensitivity.
+
+In addition, the solution should handle Strings of varying lengths.
+
+Ex:
+str = "Java Programming"
+
+output:
+"gnimmargorP avaJ"
+
+ */
