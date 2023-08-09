@@ -12,7 +12,7 @@ public class AnagramProblem {
         char [] arr1 = str1.toCharArray();// putting string in arr and comparing each char n
         char [] arr2 = str2.toCharArray();// putting second string in char arr
 
-//
+
         Arrays.sort(arr1);// sorting strings
         Arrays.sort(arr2);
 
