@@ -1,4 +1,4 @@
-public class JumpSearch {
+public class JumpSearch {//Time complexity(log n)
 
     public static int jumpSearch(int [] array, int data){
         int blockSize= (int)Math.sqrt(array.length);
@@ -15,4 +15,6 @@ public class JumpSearch {
         }
         return -1;
     }
+
+
 }
