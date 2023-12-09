@@ -1,4 +1,4 @@
-package com.cydeo.Practice;
+package com.cydeo.Practice.Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;

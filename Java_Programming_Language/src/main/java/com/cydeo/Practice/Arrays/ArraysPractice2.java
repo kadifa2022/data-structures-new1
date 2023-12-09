@@ -1,4 +1,4 @@
-package com.cydeo.Practice;
+package com.cydeo.Practice.Arrays;
 
 import java.awt.*;
 import java.util.Arrays;
