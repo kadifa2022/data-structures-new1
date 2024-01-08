@@ -1,10 +1,11 @@
 package com.cydeo.mosh;
 
+<<<<<<< HEAD
 import com.cydeo.day2_arrays.Array;
 
 import java.util.Arrays;
 
-public class PracticeAlgorithm {
+public class PracticeAlgorithm1 {
 
     public static void main(String[] args) {
         int[] numbers = {10,20,30}; // array
@@ -30,6 +31,14 @@ public class PracticeAlgorithm {
         numbers3.removeAt(2);
         System.out.println(numbers3.indexOf(2));
         numbers3.print();
+=======
+public class PracticeAlgorithm {
+
+    public static void main(String[] args) {
+        int[] numbers = new int[3];
+        System.out.println(numbers);
+
+>>>>>>> origin/master
 
     }
 
