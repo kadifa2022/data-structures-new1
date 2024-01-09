@@ -15,7 +15,7 @@ public class LinkedListPractice {
         System.out.println(list.contains(10));// boolean expression T/F
         System.out.println(list.indexOf(10));// returns index of item
         System.out.println(list.size());// How many elements are stored in list
-        var array = list.toArray();// return to regular array
+        var array = list.toArray();// convert linked list to regular array
         System.out.println(Arrays.toString(array));
     }
 }
