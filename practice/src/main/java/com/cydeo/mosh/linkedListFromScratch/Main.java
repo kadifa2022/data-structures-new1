@@ -9,7 +9,7 @@ public class Main {
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
-       // list.removeFirst();// NullPointerException
+       list.removeFirst();// NullPointerException
         list.removeLast();
         System.out.println(list.indexOf(40));
         System.out.println(list.contains(10));
