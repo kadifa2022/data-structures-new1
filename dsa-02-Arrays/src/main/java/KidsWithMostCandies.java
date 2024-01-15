@@ -19,8 +19,6 @@ public class KidsWithMostCandies {
 //        }
         //for loop iteration to check extraCandies
         int max = Arrays.stream(candies).max().getAsInt();// find max candies
-
-
         for(int candy: candies){  // for loop iteration to check with extra candies
             result.add(candy + extraCandies >= max);
         }
