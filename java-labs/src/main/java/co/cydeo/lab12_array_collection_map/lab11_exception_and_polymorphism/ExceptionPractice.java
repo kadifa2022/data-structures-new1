@@ -1,4 +1,4 @@
-package co.cydeo.lab11_exception_and_polymorphism;
+package co.cydeo.lab12_array_collection_map.lab11_exception_and_polymorphism;
 
 import java.io.FileInputStream;
 

@@ -1,4 +1,4 @@
-package co.cydeo.lab11_exception_and_polymorphism.restuarant_task;
+package co.cydeo.lab12_array_collection_map.lab11_exception_and_polymorphism.restuarant_task;
 
 public abstract class Employee {
 

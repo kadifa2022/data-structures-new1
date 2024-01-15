@@ -1,8 +1,8 @@
 package co.cydeo.lab12_array_collection_map;
 
-import co.cydeo.lab11_exception_and_polymorphism.restuarant_task.Chef;
-import co.cydeo.lab11_exception_and_polymorphism.restuarant_task.Employee;
-import co.cydeo.lab11_exception_and_polymorphism.restuarant_task.Server;
+import co.cydeo.lab12_array_collection_map.lab11_exception_and_polymorphism.restuarant_task.Chef;
+import co.cydeo.lab12_array_collection_map.lab11_exception_and_polymorphism.restuarant_task.Employee;
+import co.cydeo.lab12_array_collection_map.lab11_exception_and_polymorphism.restuarant_task.Server;
 
 import java.util.Arrays;
 
