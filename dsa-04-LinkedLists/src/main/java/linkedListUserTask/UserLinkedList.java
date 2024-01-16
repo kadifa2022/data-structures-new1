@@ -35,13 +35,10 @@ public class UserLinkedList {
         UserNode current  = head;
         // loop
         while(current != null){
-            System.out.println(current.name+ " => " );
+            System.out.print(current.name+ " => " );
             current = current.next;
-            if(current == null) System.out.println("null");// if is the last element will print the null
-
-
+            if(current == null) System.out.print("null");// if is the last element will print the null
         }
-
     }
 
 
