@@ -39,7 +39,7 @@ public class MySinglyLinkedList {
       // ptr1 is on the kth element from the last
       return ptr1.id;
   }
-    public void removeKthItemFromLast(int k){
+    public void removeKthItemFromLast(int k){   // delete
         // create three pointers
         Node ptr1=head;
         Node ptr2=head;
@@ -72,7 +72,7 @@ public class MySinglyLinkedList {
 
         }
     }
-    void add(int data) {
+    void add(int data) {  // insertion
         // create a new node object from data
         Node node = new Node(data);
 
