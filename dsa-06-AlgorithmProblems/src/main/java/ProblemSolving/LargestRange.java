@@ -1,51 +1,48 @@
 package ProblemSolving;
 
+import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Map;
 
 public class LargestRange {
     public static void main(String[] args) {
-        int[] myArray = new int[] {1,2,2,1,1,3};
-        System.out.println(uniqueOccurrences(myArray));
+
+        int[] myArray = new int[]{1, 11, 3, 0, 15, 5, 2, 4, 10, 7, 12, 6};
+        System.out.println(Arrays.toString(largestRange(myArray)));
     }
 
-
-    //number of occurrences or frequencies (should re mind me of hashMap structure)
-    //unique (should remind me if HashSet structure, set does not allow dup) and if we add some value returns boolean.
-    // getOrDefault if we already have key will increase value 1, otherwise will increase key and value
-    // sorting is nlog(n)
-    public static boolean uniqueOccurrences(int[] arr){
-        //create hashMap
-        HashMap<Integer, Integer> freq= new HashMap<>();// for the Elements and  number of  frequencies
-        // count number of occurrences and put them in map
-        for (int i : arr) { // every element in arr i will put in my map
-            freq.put(i,freq.getOrDefault(i,0)+ 1 ); // using 0 as default value and increasing by 1
+    public static int[] largestRange(int[] array) {
+        int[] bestRange = new int[2]; // will have only 2 elements first and last
+        int longestRange = 0;
+        // boolean if is visited or not
+        Map<Integer, Boolean> numsMap = new HashMap<>();
+        for (int i : array) {  // true means not visited yet
+            numsMap.put(i, true);
         }
-        // put the freq in a set and find if there are any duplicated value
-        Set<Integer> freqSet = new HashSet<>();
+        for (int i : array) {
+            if (!numsMap.get(i)) continue;
+            //this part means that this part is not visited yet
+            int currentLength = 1;
+            int left = i - 1; // two pointers
+            int right = i + 1;
+            // find left edge of this current value
+            while (numsMap.containsKey(left)) {
+                numsMap.put(left, false);
+                currentLength++;
+                left--;
+            }
+            // find right edge of this current value
+            while (numsMap.containsKey(right)) {
+                numsMap.put(right, false);
+                currentLength++;
+                right++;
+            }
 
-        for (Integer value : freq.values()) {// to get the frequency
-            // return false if you add duplicates
-            if(!freqSet.add(value)) return false;
+            if (currentLength > longestRange) {
+                longestRange = currentLength;
+                bestRange = new int[]{left + 1, right - 1};
+            }
         }
-        // There are no duplicates, frequencies are unique...
-        return true;
+        return bestRange;
     }
-
-    public static boolean uniqueOccurrences2(int[] arr){
-        //create hashMap
-        HashMap<Integer, Integer> freq= new HashMap<>();// for the Elements and  number of  frequencies
-        // count number of occurrences and put them in map
-        for (int i : arr) { // every element in arr i will put in my map
-            freq.put(i,freq.getOrDefault(i,0)+ 1 ); // using 0 as default value and increasing by 1
-        }
-        // put the freq in a set and find if there are any duplicated value
-        Set<Integer> freqSet = new HashSet<>(freq.values()); // We use frequency of value to create set
-
-        // There are no duplicates, frequencies are unique...
-        // if the size of the map and set are equals thi means that there are no duplicates
-        return freqSet.size() == freq.values().size();
-    }
-
 }
