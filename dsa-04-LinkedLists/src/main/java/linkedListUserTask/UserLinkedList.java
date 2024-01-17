@@ -41,6 +41,41 @@ public class UserLinkedList {
         }
     }
 
+    void deleteByName(String name) {
+        if (isEmpty()) {
+            System.out.println("List is empty");
+            return;
+        }
+        UserNode prev = head;
+        UserNode current = head;
+
+        while (current != null) {
+            if (current.name.equals(name)) { // founded -> delete it
+                // 3 cases for deletion head, middle and tail
+                // case1 : head
+                if (current == head) { // checking if is head
+                    if (head == tail) tail = null; // if they are the same element
+                    head = current.next;// assigning current.next to new head
+                    current.next = null; // breaking reference link from current
+                }
+                // case2 : tail
+                if (current == tail) {
+                    prev.next = null;
+                    tail = prev;
+                } else { // case3 : middle
+                    prev.next = current.next;
+                    current.next = null;
+                }
+                    size--;
+                }
 
 
-}
+                prev = current;
+                current = current.next;
+
+
+            }
+
+
+        }
+    }
