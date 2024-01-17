@@ -2,7 +2,7 @@ package reviewLinkedList;
 
 public class NewStack<T> { // Generics new stack
 
-    // here is used object-oriented design patter
+    // here is used object-oriented design patter and is called Adapter Pattern
     MySinglyLinkedList<T>  list = new MySinglyLinkedList<>();  // created my list
     void push(T t){
         list.addFirst(t);
