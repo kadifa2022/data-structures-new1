@@ -33,6 +33,7 @@ public class UserLinkedList {
         }
         //Assign current value to the head
         UserNode current  = head;
+        System.out.println();
         // loop
         while(current != null){
             System.out.print(current.name+ " => " );
@@ -68,10 +69,8 @@ public class UserLinkedList {
                 }
                     size--;
                 }
-
-
-                prev = current;
-                current = current.next;
+            prev = current;
+            current = current.next;
 
 
             }
