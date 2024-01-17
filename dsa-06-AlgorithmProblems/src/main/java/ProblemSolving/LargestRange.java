@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LargestRange {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // O (n) time complexity
 
         int[] myArray = new int[]{1, 11, 3, 0, 15, 5, 2, 4, 10, 7, 12, 6};
         System.out.println(Arrays.toString(largestRange(myArray)));
@@ -46,3 +46,5 @@ public class LargestRange {
         return bestRange;
     }
 }
+
+// another approach can be used here sort and find the longest range but will be nlogn rime complexity
