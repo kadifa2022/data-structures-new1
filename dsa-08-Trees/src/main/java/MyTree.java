@@ -1,12 +1,11 @@
-import com.sun.source.tree.WhileLoopTree;
-import org.w3c.dom.Node;
+
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class MyTree {
 
-    // need just rood
+    // need just root
     TNode root;
     public MyTree(){//NoArgsConstructor
     }
@@ -150,7 +149,7 @@ public class MyTree {
         return nodeDepthSums(root, 0);
     }
 
-    //Assignment Sun  of Node Depths
+    //Assignment Sums  of Node Depths
     public int nodeDepthSums(TNode node, int A){
 
         if(node==null) return 0;
