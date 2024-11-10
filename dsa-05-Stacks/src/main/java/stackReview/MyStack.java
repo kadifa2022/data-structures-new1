@@ -23,7 +23,7 @@ public class MyStack <T> { // generic type
         return (T) top.value;
     }
 
-    public  T pop() {// remove operation
+    public  T pop() {// remove operation/ delete
         // first we peekNode
         SNode peekNode;
         if (isEmpty()) throw new NoSuchElementException(" List is Empty");
