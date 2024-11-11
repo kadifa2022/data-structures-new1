@@ -22,6 +22,7 @@ public class TreeApp {
 //        System.out.println("Level order Breadth first: ");
 //        myTree.levelOrderTraversal();
         System.out.println(myTree.contains(88));
+        myTree.printLeaves(myTree.root);
     }
 
 }

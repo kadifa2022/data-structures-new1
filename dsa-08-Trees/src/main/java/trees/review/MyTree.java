@@ -72,10 +72,10 @@ public class MyTree {
         }
 
     }
-
+    //Task 1: Implement finding an integer value in a BST(binary Search Tree)
     boolean contains(int value) {
-        if (root == null) return false;
-        TNode current = root;
+        if (root == null) return false;// started from root
+        TNode current = root;// temp variable
         while (current != null) {
             if (value < current.value) current = current.rightChild;
             else if (value > current.value) current = current.rightChild;
@@ -83,4 +83,39 @@ public class MyTree {
         }
         return false;
     }
-}
+    //Task 2: Implement a method that returns true if the node is a leaf in a BST
+    public boolean isLeaf(TNode node){ //
+      return node.leftChild == null && node.rightChild==null;
+    }
+    // Task 3: Implement a method that prints leaves of a BST
+    void printLeaves(TNode root) {// in order traversal
+        if (root == null) return;
+        //perform visit on Root
+        if (isLeaf(root)) System.out.println(root.value + ", ");
+        // Recursively Branch left subtree
+        printLeaves(root.leftChild);
+        //Recursively Branch right subtree
+        printLeaves(root.rightChild);
+    }
+        //Task 4: Implement a method that counts leaves of a BST
+        /*
+        first I need the method to check if is the leaf or not,
+         count the numbers and return 1 if is the leaf node
+         then need to sum this count values
+         left + right leaves id the number of the tree
+         */
+        int countLeaves(TNode root){
+            if(root==null) return 0;
+            if (isLeaf(root)) return 1;
+            return  countLeaves(root.leftChild) + countLeaves(root.rightChild);
+
+
+        }
+
+    //Task 5: Implement a method that returns sum of leaf values of a BST
+    //Task 6: Implement a method that returns height of a node in BST
+
+    }
+
+
+
