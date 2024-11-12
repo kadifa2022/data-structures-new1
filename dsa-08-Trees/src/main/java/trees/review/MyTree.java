@@ -107,13 +107,27 @@ public class MyTree {
         int countLeaves(TNode root){
             if(root==null) return 0;
             if (isLeaf(root)) return 1;
+            //recursive left
+            //recursively right
             return  countLeaves(root.leftChild) + countLeaves(root.rightChild);
+
+        }
+    //Task 5: Implement a method that returns sum of leaf values of a BST
+
+        int findSumOfLeaves(TNode root){
+            if(root == null) return 0;
+            if(isLeaf(root)) return root.value;
+            return findSumOfLeaves(root.leftChild) + findSumOfLeaves(root.rightChild);
 
 
         }
-
-    //Task 5: Implement a method that returns sum of leaf values of a BST
     //Task 6: Implement a method that returns height of a node in BST
+    int heightOfTheTree(TNode root){
+            if (root == null) return -1;
+            if(isLeaf(root)) return 0;
+            return 1 + Math.max(heightOfTheTree(root.leftChild), heightOfTheTree(root.rightChild));
+    }
+
 
     }
 

@@ -23,6 +23,10 @@ public class TreeApp {
 //        myTree.levelOrderTraversal();
         System.out.println(myTree.contains(88));
         myTree.printLeaves(myTree.root);
+        System.out.println();
+        System.out.println("Count of leaves: " + myTree.countLeaves(myTree.root));
+        System.out.println("Find sum of the leaves : "+ myTree.findSumOfLeaves(myTree.root));
+        System.out.println("Height of the Tree: "+ myTree.heightOfTheTree(myTree.root));
     }
 
 }
