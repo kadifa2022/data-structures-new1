@@ -134,8 +134,18 @@ public class MyTree {
 
     public int nodeDepthSums(TNode node, int A){
             if(node == null) return 0;
+        System.out.println(A);
             return A + nodeDepthSums(node.leftChild, A+1) + nodeDepthSums(node.rightChild, A+1);
 
+
+    }
+    public int sumOfAllNodes(){
+            return calculateSumOfAllNodes(root);
+    }
+    public int calculateSumOfAllNodes(TNode node){
+            if(node==null) return 0;
+            return node.value+ calculateSumOfAllNodes(node.leftChild) +
+                    calculateSumOfAllNodes(node.rightChild);
 
     }
 

@@ -27,6 +27,8 @@ public class TreeApp {
         System.out.println("Count of leaves: " + myTree.countLeaves(myTree.root));
         System.out.println("Find sum of the leaves : "+ myTree.findSumOfLeaves(myTree.root));
         System.out.println("Height of the Tree: "+ myTree.heightOfTheTree(myTree.root));
+        System.out.println("Sum of the Node Depths is: " + myTree.calculateNodeDepthSum());
+        System.out.println("Sum of all Nodes in myTree: " + myTree.sumOfAllNodes());
     }
 
 }
