@@ -36,9 +36,64 @@ public class MyHeap {
             index = parentIndex(index); //is like current is = to current.next
 
         }
+    }
+    public int remove(){
+        if(size== 0) throw new NoSuchElementException();
+        else{
+            int result = items[0];
+            items[0] = items[--size];
+            bubbleDown();
+            return result;
 
+        }
+    }
+
+    private void bubbleDown() {
+        int index= 0;
+        int largerChildIndex;
+        while(index<= size && !isValidParent(index)){
+            largerChildIndex = largerChildIndex(index);
+            swap(index, largerChildIndex);
+            index = largerChildIndex;
+
+        }
+    }
+
+    private int largerChildIndex(int index) {
+        if(!hasLeftChild(index)) return index;
+        else if(!hasRightChild(index)){
+            return leftChildIndex(index);
+
+        }
+        return items [leftChildIndex(index)]>items[rightChildIndex(index)]
+                ? leftChildIndex(index): rightChildIndex(index);
 
     }
+
+    private boolean isValidParent(int index) {
+        if(!hasLeftChild(index)) return true;
+        else{
+            boolean isValid = false;
+            if(hasRightChild(index)){
+                isValid =(items[index] >= items[leftChildIndex(index)]
+                        && items[index]>= items[rightChildIndex(index)]);
+            }
+            return isValid;
+        }
+    }
+
+    private boolean hasLeftChild(int index) {
+        return leftChildIndex(index)<=size;}
+    private boolean hasRightChild(int index){return rightChildIndex(index) <= size;}
+
+    public int leftChildIndex(int index){
+        return index * 2 + 1;
+    }
+    public int rightChildIndex(int index){
+        return index * 2 + 2;
+    }
+
+
 
     private void swap(int index, int parentIndex) {// can be int first, int second
         int temp= items[index];
