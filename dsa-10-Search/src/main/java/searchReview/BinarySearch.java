@@ -8,6 +8,7 @@ public class BinarySearch {
             num[i] = i;
         }
         System.out.println(binarySearchIterative(num, 4));
+        System.out.println(binarySearchRecursive(num,6,0,num.length-1));
     }
 
 
@@ -28,7 +29,7 @@ public class BinarySearch {
     }
 
     public static int binarySearchRecursive(int[] array, int data, int left, int right) {
-        if (left < right) return -1;
+        if (left > right) return -1;
         int middle = (left + right) / 2;
         if (array[middle] == data) return middle;
         if (data < array[middle]) return binarySearchRecursive(array, data, left, middle - 1);
