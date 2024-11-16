@@ -1,11 +1,27 @@
 package searchReview;
 
 public class BinarySearch {
-    public int linearSearch(int[]array, int data){
-        for(int i= 0; i<array.length; i++){
-            if(array[i] == data) return i;
+    public static void main(String[] args) {
+
+        int [] num = new int[10];
+        for(int i = 0; i<10; i++){
+            num[i] =i;
+        }
+        System.out.println(binarySearchIterative(num, 4));
+    }
+
+
+
+    public static int binarySearchIterative(int[] array, int data) {
+        int left = 0;
+        int right = array.length - 1;
+        while (left <= right) {
+            int middle = (left + right) / 2;
+            if (array[middle] == data) return middle;
+            if (data < array[middle]) right = middle - 1;
+            else left = middle + 1;
+
         }
         return -1;
     }
-
 }
