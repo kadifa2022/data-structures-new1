@@ -16,11 +16,9 @@ public class Task_ExperimentingSearchAlgorithm {
                 result [0] = System.currentTimeMillis()-startTime; // execution time
                 result[1] = comparisons; // number of comparisons
                 return result;
-
             }
         }
         return  new long[2]; // if we can't find return empty array
-
     }
 
 }
