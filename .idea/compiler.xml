@@ -23,6 +23,7 @@
         <module name="dsa-upskill-codes" />
         <module name="dsa-08-Trees" />
         <module name="dsa-04-LinkedLists" />
+        <module name="practice_coding" />
         <module name="dsa-07-Queues" />
       </profile>
     </annotationProcessing>
