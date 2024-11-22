@@ -73,8 +73,17 @@ public class UserLinkedList {
             current = current.next;
 
 
-            }
-
-
         }
+    }
+    public UserNode reverseList(UserNode head){
+        UserNode prev = null;
+        UserNode current = head;
+        while(current != null){
+            UserNode next = current.next;// save the node
+            current.next = prev; // reverse the pointer
+            prev = current; // Move prev to the current node
+            current = next; // Move current to the next node
+        }
+        return prev; //new head of the reversed list
+    }
     }
