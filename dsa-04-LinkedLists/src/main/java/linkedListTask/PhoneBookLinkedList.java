@@ -37,7 +37,7 @@ public class PhoneBookLinkedList {
             size++;
         }
 
-        public PhoneNode findBByFirstName(String firstName){
+        public PhoneNode findByFirstName(String firstName){
         if(isEmpty()){
             throw new NoSuchElementException("its n ot here guys");
         }
