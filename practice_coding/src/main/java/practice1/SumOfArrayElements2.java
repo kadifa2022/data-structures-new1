@@ -16,4 +16,11 @@ public class SumOfArrayElements2 {
         }
         return sum;
     }
+    public int calculateSumOfTheArray(int [] array){
+        int sum =0;
+        for(int i =0; i < array.length ;i++){
+            sum = sum + array[i];
+        }
+        return sum;
+    }
 }
