@@ -19,12 +19,26 @@ public class FindTheSecondLargestNumber{
             }// {10,7,23,45,30}; // complex case
             else if (num > secondLargest && num != largest){
                 secondLargest = num;
-
             }
         }
         return secondLargest;
     }
 
+    public static int findSecondLargest2(int [] array) {
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int i = 0; i < array.length ; i++){
+            int num = array[i];
+            if(largest < num){
+                secondLargest = largest;
+                largest = num;
+            } else if(num > secondLargest && num != largest){
+                secondLargest = num;
+            }
+        }
+        return secondLargest;
+    }
 
 
 }
