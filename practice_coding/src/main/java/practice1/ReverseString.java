@@ -5,7 +5,7 @@ public class ReverseString {
 
         String inputStr = " Interview Happy"; // set input
         String reversedString = reversedString(inputStr); // set result
-       // System.out.println(reversedString); // print result
+        System.out.println(reversedString); // print result
         System.out.println(reverseString2(inputStr));
     }
 
