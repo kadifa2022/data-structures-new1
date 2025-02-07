@@ -5,6 +5,20 @@ charAt()
 length()
 indexOf() // every character in string has Index number
             index number starts with 0 and must be unique index number
+            indexOf() ->should not be last than 0, If don't exist than will return -1;
+
 (lastIndexOf(), lower/upper, replace(), replaceFirst(), equals(), contains
+
+Loops: Repeated Actions
+
+      For Loop: if the number of iteration is known
+      for(initialization/start; condition/stop ; iterator/ increment/decrement ){
+      body of the loop}
+      for(int i = 0; i < name.length()-1; i++)
+
+
+
+
+      While Loop: if the iteration is unknown
 
 

@@ -1,9 +1,13 @@
 package lab5_String;
 
+import java.util.Scanner;
+
 public class TestStringObjects {
     public static void main(String[] args) {
 
-        String str1 = new String("Java");
+       String str1 = new String("Java");
+
+
 
         String str2 = "Java";
 
@@ -13,7 +17,8 @@ public class TestStringObjects {
         System.out.println(str2 == str4);//true
 
         System.out.println(str1 == str3);// false
-        System.out.println(str1.equals(str2));
+
+        System.out.println(str1.equals(str2));//true
 
 
 
