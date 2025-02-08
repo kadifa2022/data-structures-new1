@@ -38,12 +38,21 @@ public class StringMethodsPractice {
          s1 = s1.toUpperCase();
           System.out.println(s1);
 
-        System.out.println("-------Replace() --------------");
+        System.out.println("-------replace() --------------");
 
         String sentence = "Today is Thursday, and Thursday is a lab day"; //GC
 
         sentence = sentence.replace("Thursday", "Friday");
         System.out.println(sentence);
+
+        System.out.println("-------replaceFirst() --------------");
+
+        String s = "Today is Thursday, and tomorrow is Thursday ";
+        s = s.replaceFirst("Thursday", "Wednesday");
+        System.out.println(s);
+
+
+
 
 
 

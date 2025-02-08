@@ -21,4 +21,7 @@ Loops: Repeated Actions
 
       While Loop: if the iteration is unknown
 
+      while(boolean condition){ // runs multiple time until conditions become false
+
+
 
