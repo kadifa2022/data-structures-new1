@@ -51,6 +51,29 @@ public class StringMethodsPractice {
         s = s.replaceFirst("Thursday", "Wednesday");
         System.out.println(s);
 
+        System.out.println("-------substring()----------");
+        // ask to replace domain of the email
+
+        String email = "cydeo_school@gmail.com";
+        int beginningIndex = email.indexOf('@') + 1;//  middle of the string to ger specific substring
+         int endIndex = email.lastIndexOf('.'); // ending index is always excluded in substring method
+        String domain = email.substring(beginningIndex, endIndex);
+        System.out.println(domain);
+
+        System.out.println("substring to the end ------");
+        String s2 = "I study at CYDEO";
+
+        String schoolName = s2.substring(s2.indexOf('C'));// from the specific character to the end of the string
+        System.out.println(schoolName);
+
+        System.out.println("-----------------------------------");
+        String a1 = "Dog";
+        String a2 = "dog";
+        System.out.println(a1.equals(a2));//print statement any accepts value
+
+
+
+
 
 
 
