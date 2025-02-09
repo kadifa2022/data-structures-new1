@@ -1,0 +1,26 @@
+Custom Methods:
+
+Syntax:
+Access-Modifier    Specifier   Return-Type   MethodName(Parameters){
+
+            Code Fragment that can perform the task
+    }
+
+    Access-Modifiers: public, protected, private, default
+            public : always visible
+            protected:
+            private: with the same class
+            default:
+
+
+    Specifier: static, final, abstract, synchronized
+    static: no need for object to be created, belongs to the class / call through class
+
+    Return-Type: void, DataType
+
+    Parameters: - when additional information are required(for exp: to reverse String we need to pass string)
+
+Branching Statements:
+        Break: Jump from loop and switch statements
+        Continue: Jump from specific Iterations from the loop
+        Return: jump/exit the methods and return the value of the methods

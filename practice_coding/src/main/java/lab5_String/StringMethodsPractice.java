@@ -66,19 +66,26 @@ public class StringMethodsPractice {
         String schoolName = s2.substring(s2.indexOf('C'));// from the specific character to the end of the string
         System.out.println(schoolName);
 
-        System.out.println("-----------------------------------");
+        System.out.println("---------equal()--------------------------");
+        // equals() both of the objects has to have same length of the characters
         String a1 = "Dog";
         String a2 = "dog";
         System.out.println(a1.equals(a2));//print statement any accepts value
 
+        System.out.println("---------Contains()------");
 
+        String s3 = "Java is my favorite programming language";
+        System.out.println( s3.equals("Java"));
 
+        System.out.println(s3.contains("Java"));// just compare if these characters include in string
 
+        System.out.println(s3.repeat(2));
 
+        System.out.println("------startsWith() and endsWith()---------");
+        String str = "Cydeo school";
 
-
-
-
+        System.out.println(str.startsWith("Cyo"));
+        System.out.println(str.endsWith("ool"));
 
 
     }

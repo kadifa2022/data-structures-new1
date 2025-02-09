@@ -9,13 +9,41 @@ public class FrequencyOfWord2 {
 
         //sentence.indexOf("Java") >= 0; // one way to provide expression
 
-        while(sentence.contains("Java")){// another way
+        while (sentence.contains("Java")) {// another way
             sentence = sentence.replaceFirst("Java", ""); // remove one "java" at the time
             // loop will continue until false
-            countJava ++; // increase the number of "Java" by 1
+            countJava++; // increase the number of "Java" by 1
         }
         System.out.println(countJava);
 
-        }
+
+
+
+
+String sentence2= "Monday Monday Monday Tuesday Tuesday Tuesday Monday";
+int countMonday = 0;
+
+while(sentence2.contains("Monday")){
+
+    sentence2 = sentence2.replaceFirst("Monday", "");
+    countMonday ++;
+}
+
+        System.out.println("Count Monday " + countMonday);
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
     }
 

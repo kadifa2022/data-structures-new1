@@ -25,6 +25,11 @@ public class FrequencyOfWord {
         int totalNumberOfJava = sentence.length() - temp.length();
         System.out.println(totalNumberOfJava);
 
+
+
+
+
     }
+
 
 }

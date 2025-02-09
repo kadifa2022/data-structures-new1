@@ -22,6 +22,9 @@ Loops: Repeated Actions
       While Loop: if the iteration is unknown
 
       while(boolean condition){ // runs multiple time until conditions become false
+      while Loop and if statement both do boolean expression
+      if Strings has a method that returns boolean we can use if statement and while loop
+
 
 
 
