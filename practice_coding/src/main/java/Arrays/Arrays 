@@ -1,0 +1,46 @@
+Array:
+
+Array is fixed DS,
+has index,
+
+To be able to print arrays we need to import from java util pg.
+print: Arrays.toString()
+Methods :
+     toString()
+     sort()
+     equals()
+     copyOf()
+     copyOfRange()
+
+
+forEach loop: is used for accessing the each  element value itself.
+
+There must be DS Array, Collection or map
+Iteration times and orders are fixed
+Does NOT have index numbers
+Syntax:
+    for(dataType variableName: dataStructure){
+     // statement
+
+     Data type must match with the successive values of the data Structure
+
+     int[] numbers ={3,6,9};
+     for(int each: numbers)
+     sout(each);
+
+  Multi Dimensional Array:
+   - An Array of Arrays
+   - A special variable that's used as a container of arrays
+   - Dimensions of the array can be 2,3,4, ...n dimensions
+   -The N dimensional array is a container for (N-1) dimensional arrays
+
+   int[][] array2D = new int[3][];(Number of one dimensional arrays) N-1
+
+  Idx numbers of elem  {{0,1},{0,1,2},{0,1,2}};
+     int[][] array2D = {{1,2},{3,4,5},{6,7,8,9}};
+                     array    array    array
+   Inx. of 1D array  0          1          2
+
+   int[represent: Indexes 1D arrays][Index elements] array2D=
+
+
