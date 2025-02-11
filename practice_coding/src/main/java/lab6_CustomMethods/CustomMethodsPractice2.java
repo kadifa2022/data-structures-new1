@@ -7,6 +7,9 @@ public class CustomMethodsPractice2 {
         System.out.println(result);
         System.out.println(left2("Hel"));
         System.out.println(right2("java"));
+        System.out.println(frontAgain("edited"));
+        System.out.println(countHi("Hi Hi Hi Hi "));
+        System.out.println(catDog("Cat cat Dog  "));
 
     }
     public static String comboString(String a, String b){
@@ -38,6 +41,35 @@ public class CustomMethodsPractice2 {
         String s1 = str.substring(str.length() - 2); //lo
         String s2 = str.substring(0, str.length() -2); //Hel
         return s1 + s2;//"loHel"
+    }
+
+    public static boolean frontAgain(String str){
+
+        if(str.length()<  2){
+            return false;
+        }
+        return str.substring(0,2).equals(str.substring(str.length() -2));
+
+
+
+
+    }
+
+
+    public static int countHi(String str){
+       return StringUtility.frequency(str, "Hi");
+
+
+    }
+
+    public static boolean catDog(String str){
+     str =  str.toLowerCase();
+
+       int countCat = StringUtility.frequency(str, "cat");
+        int countDog = StringUtility.frequency(str, "dog");
+        return countCat == countDog;
+
+
     }
 
 
