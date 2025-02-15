@@ -1,0 +1,33 @@
+
+
+Collection DS do not supports primitives.
+List also do not support any primitives.
+
+-is index based class, internally uses array.
+ has index for retrieving is faster than any other DS.
+ array list is automatically growing or shrinking
+
+ - Takes Wrapper class
+
+
+ has methods:
+ add() - adding objects into the arrayList increasing by 1
+ size()
+ get(index ) - retrieving specific element from the list
+ indexOf()
+ set(index, newIndex) - replaces the element of the array list at given index into the new element
+ remove() - is not able to remove element based on index # because of the collections,
+           collections is dynamic DS  and will shift element
+ clear()
+ lastIndexOf()
+ contains()
+ equals()
+ isEmpty()
+ containsAll()
+ addAll()
+ removeAll()
+ retainAll()
+
+removeIf() - accept index number to remove elements from collection and internally use iterable
+//removeIf(Predicate): removes all the elements from the ArrayList that are matching wit the given predicate condition
+Predicate has Test() returns boolean T/F
