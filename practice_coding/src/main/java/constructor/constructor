@@ -1,0 +1,17 @@
+
+constructor is special method, no return types
+to call instances from object we need to create constructor with parameters
+because we want to initialize fields(instance variables) of the class with our own values.
+
+ other wise
+
+we need to call each instance separate one to set it( not efficient way)
+
+constructor name has to be the same as the class name all the time.
+ we are using the constructors to set the fields of the objects and we pass Arguments/ fields in parameter.
+ to call the instance variable we use the name local/instance variable
+ this. key word
+ this. name = name;
+
+ Default constructor does not have parameter.
+

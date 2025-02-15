@@ -1,0 +1,73 @@
+exception and errors
+Exception intro:
+Exception is an unwanted or an unexpected event
+- Occurs during the compile time ar during the runtime
+- There are two categories of exceptions : checked exception and unchecked exception
+- To prevent exceptions from crashing our program, we must write code that detects and handles them
+
+Unchecked Exceptions:
+-Exceptions that are not checked at compile time
+-occurs during the runtime
+-Code will compile even if we don't handle them
+-They have Is A Relationship with RunTimeException(parent class of all runTimeExceptions)
+
+Checked exceptions:
+-Exception that are checked at compile time
+-Occurs during compile time
+-Code will NOT compile until we handle them right away
+-They DONT have Is A relationship with runTimeException class
+
+Exception Handling -Try & Catch
+
+To handle an exception(checked aor unchecked), we can use try & catch block
+
+Try{ //  during the compile time
+    // try block statements
+    //some code that might throw exception
+
+} catch(Exception class e){ // catches during the runtime
+    // catch block statements
+    // handle exception(if(try block can'T)
+    }
+
+
+    Exception Object
+    When runtime exception happens, java will catch it and assignes to a variable in catch block
+    After it is successfully caught, we can use the variable and call some methods on the exception object
+
+    Popular method of exception objects are:
+    -printStackTrace(): prints a stack trace (full details)of exception
+    -getMessage() :returns only brief description of the exception
+
+    To handle an exception(checked or unchecked), we can use try & catch blocks
+
+    Finally block
+    An optional block that can be given after last block
+    Always executed after dry & catch blocks whether an exception occurs or not
+
+    Throws Keyword
+    Used within the method signature
+    Informs the compiler that method throws one of the listed type exception
+    Fastest way to get rid of the compilation error that's caused by a checked exception
+
+    public static void main(String [] args) throws InterruptedException{
+
+    System.out.println("Hello");
+    Thread.sleep(3000); //checked exception
+    System.out.println("World");
+    }
+
+throws keyword:
+ is used for fastest way to handle exceptions and
+it's only handle checked exceptions.
+
+Ones throws key word is used in method signature, whoever calls the method
+that has throws keyword in its signature is responsible to handle it or declare it again.
+
+Try and catch handles the exception permanently, throws key word temporary and only checked exception
+
+
+Throw keyword:
+
+Used to manually throwing an exception
+throw new ExceptionType(MessageString);
