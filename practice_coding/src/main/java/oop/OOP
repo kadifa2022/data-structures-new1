@@ -1,0 +1,80 @@
+OOP:
+Encapsulation: (Hiding Data)
+ -An object hides its internal data from code that's outside the class
+ -Only the current class,methods can directly access and make change to the instance variables
+ - Hide an instance variable by giving private access modifier, and making methods those fields private
+ -those methods are called getter & setter (accessor and mutator)
+
+ Getters and setters
+ Both are public instance methods, used to protect our date and make our code more secure
+ -Getter is used for reading the private data(instance variables) only
+ -Setter is used for writing (modifying) private data(instance variable) only
+
+ Getter: reading
+ - An instance return method that returns the private instance variable
+ - Does not pass any parameter
+ - Return type must match with the data type of  the private instance variable
+
+ public class Person{
+ private int age;
+
+ public int getAge(){
+ return age:
+ }
+
+ Setter: Modifying
+ -An instance return method with the return type void
+ -Pass a parameter, and parameter will assigned to the private instance variable
+ -Data type of the parameter must match with the data type of private instance variable
+
+ public class Person{
+
+ private int age;
+
+ public void setAge( int age){
+ this.name = name;
+}}
+
+
+InstanceOf() key  word can be used to check if the object is in certain class.
+Returns boolean.
+Animal animal = new Dog();
+if(animal instanceof Cat){
+    sout("It is a Cat");
+    } else{
+    sout("It is not a cat);
+
+Reference type of castings
+Casting one reference type to another
+There must be IS A (Inheritance)relation between the object type and
+reference type we are casting it to, otherwise ClassCastException will be thrown
+
+There are two types of reference type casting:
+        upcasting and down casting
+
+
+ Upcasting: implicitly / automatically
+ -Casting the smaller reference type (sub type) to larger reference type(super type)
+ -Upcasting is done implicitly and cast operator is not required to be given explicitly
+ -Allows us to achieve polymorphism without any explicit action
+
+ Animal animal1 = new Cat();// upcasting
+ Dog dog = new Dog();
+ Animal animal2 = dog; // upcasting
+
+ Phone phone1 = new IPhone(): // upcasting
+ Samsung samsung = new Samsung();
+ Phone phone2 = samsung;// upcasting
+
+ Down Casting
+
+ -Casting the larger reference type(super type) to smaller reference type(sub type)
+ -Down casting is done explicitly and cast operator is required to be given explicitly
+ -Allows us to access the features of the objects type that are not in reference type
+
+Animal animal1 = new Dog();
+Dog dog = (Dog) animal1 // down-casting
+dog.bark();
+or
+Animal animal = new Dog();
+( (dog)animal ).bark(); // down-casting

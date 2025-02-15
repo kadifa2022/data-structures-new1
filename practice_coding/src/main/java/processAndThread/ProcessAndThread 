@@ -1,0 +1,28 @@
+Process and Thread:
+
+Process: is a Operating system that runs process
+--Programs that are scheduled for execution in the CPU
+--An instance  of a program running on a computer
+--A process has code, data, and help others segments.
+
+THREAD:
+--Thread is a subset of process(threads comme with the process and shares all resources with the process)
+--A Sequence of execution whit in a process(any action with the process is creating the thread)
+--Every single process at least have one thread
+--Shares all resources of process
+
+Multi_Threading
+    --Two or more threads are being executed with the process
+    (program running, process is executing more than one thread)
+
+Multi-Tasking  definition:
+
+Two or more process are being executed within the operating system
+
+Synchronized (Thread-safety)
+    --Process of controlling the access of multiple thread to any share resources
+    --Only one thread to access the shared resource at a time (Thread -safety)
+    --the rest of the treads are waiting   for lock
+    (if 4 different threads being created with in the process if i synchronized them,
+    each of the threads get access the resources one at the time.
+   (if i don't synchronized them all threads could  access resources at the same time)
