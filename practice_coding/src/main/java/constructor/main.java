@@ -14,5 +14,18 @@ public class main {
 
 
         System.out.println(emp2);
+
+        Circle c1 = new Circle(5);
+        Circle c2 = new Circle(3);
+        Circle c3 = new Circle(4);
+        Circle c4 = new Circle(6);
+        System.out.println(c1.pi);
+        System.out.println(c2.pi);
+        System.out.println(c3.pi);
+        System.out.println(c4.pi);
+
+
+
+        Circle.printPI();
     }
 }
