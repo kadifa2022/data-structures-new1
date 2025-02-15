@@ -1,0 +1,101 @@
+CollectionNotes:
+
+Collections is DS and has utility classes.
+  -presented in "java.util package
+
+  Methods:
+  sort(list) : sorts the list in ascending order
+  max(list): returns the max number
+  min(list): returns the min number
+  revers(list): reverse the list
+  swap(list, index1, index2): swaps the elements at the given indexes
+  frequency(list, element): returns the frequency of the element from the list
+
+  Collection Intro: List, Queue, Set
+
+  Collections is group of individual objects as a single entity
+  Defines several classes and interfaces which can be used to represent a group of objects as single entity
+  -Growable in nature, can increase and decrease the size
+  -Can hold different non_primitive data types
+  -Standard data structure. There are ready methods to use.
+
+
+Collection interfaces is considered as root interface of collection framework
+Collection interface defines the most common methods which are
+applicable for any collection object
+
+Methods:
+        size()         isEmpty()      add()       addAll()     remove()
+       removeAll()    removeIf()    contains()   containsAll   retain()
+      clear()         toArray()
+
+
+List Interface :
+    --Child  interface of Collections
+    --Duplicates are allowed
+    --Insertion order preserved
+    -- Has Index numbers
+
+Array List:
+   --Implementing List interface
+   --Internally uses array
+   --Retrieving the element is faster
+
+
+LinkedList class:
+  --Implementing list interface
+  --Internally uses doubly linked list
+  --Each value will have pointer to the next value
+  --Inserting and deleting the  element is faster
+
+Vector class:
+    -- Implementing the List interface
+    --Internally uses array
+    --Is Synchronized(thread_safe) One thread at the time  slower
+
+Stack class
+--is Child class of vector
+--Is Synchronized (thread -safe)
+--last in, first out order (LIFO)
+
+special methods:
+push()
+pop() last object will be removed from stack
+
+Set Interfaces:
+Child interfaces of Collections
+    Set interfaces does not allowed any duplicate objects
+    Insert order not preserved
+    Does not have index
+
+HashSet Class
+    -Implements the set Interface
+    -Maintains the random order(no guaranty for order)
+    -Accepts null values
+
+LinkedHashSet class
+    - child class of hashSet
+    - Maintains the insertion order
+    -Accepts null value
+
+TreeSet class
+    - Implements the sorted set interface
+    - Maintains the sorted order (Ascending)
+    - oes not accept null values
+
+Queue Interface
+    - Child interface of Collection
+    -No index numbers
+    - Duplicated are allowed
+    -Insertion not order preserved
+    -First IN, First Out (FIFO) makes queue unique
+
+PriorityQueue Class
+     - Implements the Queue Interface
+     - Maintains the random Order
+     - Does not accept null values
+
+ArrayDeQueue class
+    - Implements the Deque Interface
+    - Maintain the insertion order
+    - Accepts null values

@@ -41,6 +41,21 @@ Syntax:
                      array    array    array
    Inx. of 1D array  0          1          2
 
-   int[represent: Indexes 1D arrays][Index elements] array2D=
+   int[represent: Indexes 1D arrays][Index elements] array2D =
+
+   Autoboxing  vs unboxing:
+
+   Autoboxing converts primitive into wrapper class object
+   Unboxing converts wrapper class object into primitive
+
+   Wrapper class methods:
+
+   // parse methods(converting sting of text  to primitive type)
+   String str= "123";
+   int num1 =  Integer.parseInt(str); // returns primitive # 123
+
+   //valueOf methods
+
+
 
 
