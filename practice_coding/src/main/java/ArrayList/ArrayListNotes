@@ -31,3 +31,9 @@ List also do not support any primitives.
 removeIf() - accept index number to remove elements from collection and internally use iterable
 //removeIf(Predicate): removes all the elements from the ArrayList that are matching wit the given predicate condition
 Predicate has Test() returns boolean T/F
+
+List Interface:
+    --Child Interface of Collection
+    --Duplicates are allowed
+    --Insertion Order preserved
+    --Has index number
