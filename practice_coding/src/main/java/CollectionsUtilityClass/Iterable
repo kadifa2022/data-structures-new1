@@ -1,0 +1,20 @@
+ITERABLE
+
+Iterable is parent interface of Collection
+--Allows the object to be iterated by using Iterator (third way if iterating collections)
+--Iterator is used when we want to remove elements whilst
+    we Iterate over collections
+--The reason we use Iterator is when we are removing element
+
+ from collection index number keeps changing, once
+ we remove one element previews index number no longer referencing next elements
+in that case we use Iterator
+
+How to use Iterator?
+
+--We can obtain the Iterator by using the iterator() method of an Iterable
+--Iterator provides the ready methods that
+can be used while traversing the collection:
+        hasNex(); // boolean
+        next();
+        remove();

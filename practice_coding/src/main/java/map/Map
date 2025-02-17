@@ -1,0 +1,77 @@
+Map in collections:
+import java.util.map:
+
+
+Methods of Map:
+
+put(), get(), size(), replace(), remove(),
+containsKey(),containsValue(), isEmpty(),
+equals(), clear(), keySet(),values(), entrySet()
+
+   -- Collection of pair
+   --Data structure based on Key +value pairs
+   --Does not have IS A relation with Collection
+   --Size can be increased or decreased (dynamic size)
+   --Key CAN NOT be duplicated
+
+   (to add elements has put())
+
+HashMap class:
+       --Implements the Map interface
+       --Maintains the random order
+       --Accept null value as a key
+       --
+
+LinkedHashMap class:
+    --child class of hashMap
+    --Maintains insertion order
+    --Accepts null value as a key
+
+TreeMap class:
+    --Implements the sortedMap Interface
+    --Maintains the sorted(Ascending) order (sorting keys in order)
+    --Does NOT accept null as a key
+
+HashTable Class:
+    --Implements the map interface
+    --Maintains the random order
+    --Does not accept null as a key
+    --Synchronized(Thread-safe)
+
+
+    HashMap      vs     LinkedHashMap       vs      HashTable        vs      TreeMap
+
+
+   HasMap               LinkedHashMap                 HashTable              TreeMap
+
+   Not Synchronized      Not Synchronized            Synchronized            Not Synchronized
+
+   allows one null key    allows one null key        does not allows any     does not allows any
+   and multiple null      and multiple null          null key or value        null key or value
+   values                  values
+
+   random order           insertion order                 random order        Maintains sorted order
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
