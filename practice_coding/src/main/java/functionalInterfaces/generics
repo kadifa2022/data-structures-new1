@@ -1,0 +1,6 @@
+Generics:
+Generics means:
+    --Parameterized types
+    --Allows us reuse the same code with different types
+    --Generic types can be applied to the method, class and Interfaces
+

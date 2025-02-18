@@ -1,0 +1,9 @@
+Enum is a special data type
+Represent a group of constants(number of the things)
+Used for containing fixed set of constants
+like:
+ Seasons:
+    SPRING
+    SUMMER
+    FALL
+    WINTER

@@ -1,0 +1,39 @@
+
+
+Functional Interface was added with Java version 8.
+
+--Functional Interface knows as SAM (single Abstract method)
+--There is only one Abstract method in the interface
+--can be added static and default methods
+--Effectively acts as function
+-- one abstract method we can use as different functions
+--@FunctionalInterfaceannotation is applicable(Optional)
+
+Build in functional interfaces :
+
+Predicate:
+         - Represent one function which takes one argument (any objects) and
+         - returns boolean
+         - has boolean method test(T t)
+
+
+Function (void function(int a))Abstract method no return type
+Consumer
+Supplier
+BiFunction
+
+Lambda Expression
+---A function with no name an identifier
+---Can be defined in place where they are needed
+---Expresses the instances of a functional Interface
+---Can be assigned to the instance of functional interface
+
+Syntax:
+    ()-> {statement} : //if the abstract method does not have parameter   this syntax we can apply
+                     Takes no argument and executes the
+                      given statement(s) in lambda expression's body
+
+
+    (parameters)-> {statements} :// if the abstract method has  parameters,  this syntax we apply
+                    Takes argument(s) and executes the given
+                    statements in lambda expression's body
