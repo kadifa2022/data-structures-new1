@@ -56,7 +56,10 @@ HashTable Class:
 
 
 
-
+How to iterate map:
+       keySet()
+       value()
+       entrySet()
 
 
 
