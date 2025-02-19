@@ -15,10 +15,51 @@ Predicate:
          - Represent one function which takes one argument (any objects) and
          - returns boolean
          - has boolean method test(T t)
+         -- removeIf() we can use for remove in collections
+
+          List<Integer> list = new ArrayList<>();
+                 list.addAll(Arrays.asList(1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,1,1,2,2,3,3,4,5,6,6,7));
+
+                 Predicate<Integer> isEven = p -> p % 2 == 0;
+
+         //
+         //            // can be this way to return true
+         //            if (p % 2 == 0) {
+         //                return true;
+         //            } else {
+         //                return false;
+         //            }
 
 
-Function (void function(int a))Abstract method no return type
-Consumer
+
+               list.removeIf(isEven);// takes predicate
+                 System.out.println(list);
+
+
+ BiPredicate:
+    --Represents a function which takes two arguments(any object) and returns boolean
+    -- boolean test(T t, U u); abstract method
+
+
+Function :
+        --Represents a function which takes one argument(any object)
+        --and return a value (any object)
+
+        public interface Function<T, R>{  // R is return type any object
+        R apply(T T);     // Abstract Method
+
+BiFunction:
+
+
+
+Consumer(void accept(T t) Abstract method)
+        --represent a function which takes one argument(any object)
+        --and does not return a value
+
+BiConsumer:
+        --  Takes two arguments(any object)and does not return a value
+                  -- accept(): void accept (T t, U u); abstract method
+
 Supplier
 BiFunction
 
