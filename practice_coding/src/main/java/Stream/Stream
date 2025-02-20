@@ -1,0 +1,16 @@
+
+What is stream and stream Pipeline?
+
+    --Stream is a sequences of elements from a
+      source that supports data processing operations.
+
+    --Streams are  an update to the Java API that let you
+       manipulate collections of data in a declarative way
+
+    --Stream pipeline is the operations
+       that run on a stream to produce a result
+
+   --Stream is not Data Structure
+   --Stream is a sequences of elements from a data structure (Array & Collection)
+   --Stream takes inputs from the source(Array or Collection) but unable
+    to change /modify it
