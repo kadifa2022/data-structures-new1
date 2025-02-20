@@ -49,6 +49,9 @@ Function :
         R apply(T T);     // Abstract Method
 
 BiFunction:
+        -- Represent a function which takes two arguments (any object)
+        -- return a value (any object)
+        -- R apply(T t, U u); Abstract method
 
 
 
@@ -61,7 +64,7 @@ BiConsumer:
                   -- accept(): void accept (T t, U u); abstract method
 
 Supplier
-BiFunction
+
 
 Lambda Expression
 ---A function with no name an identifier
