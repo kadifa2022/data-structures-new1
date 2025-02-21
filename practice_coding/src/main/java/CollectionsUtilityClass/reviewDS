@@ -1,0 +1,34 @@
+Data Structures: to use data efficiently
+
+1.Array
+2.Collection
+3.Map
+
+        Containers of the Data Structure
+
+ Array vs Collection vs Map
+        1. Array:
+            -Size is fixed
+            -supports both primitive and non Primitive data types
+            -Can be multi- Dimensional
+            -Faster (random access)
+
+            -disadvantages of array:
+                -size is fixed
+                -does not have available methods for array
+
+        2. Collection:
+        -OF individual objects
+            -size is dynamic
+            -supports non_primitive data types ONLY
+            -Can NOT be multi-dimensional
+            -ready methods
+
+        3. Map:
+        -Map is Collections OF pairs(key and values) Entry
+               -size is dynamic
+               -supports non-primitive data types ONLY
+               -Can NOT be multi-dimensional
+               -ready methods
+
+   Java is not 100% object oriented
