@@ -35,7 +35,7 @@ TreeMap class:
 HashTable Class:
     --Implements the map interface
     --Maintains the random order
-    --Does not accept null as a key
+    --Does not accept null as a key or value
     --Synchronized(Thread-safe)
 
 

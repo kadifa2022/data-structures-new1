@@ -24,11 +24,90 @@ Data Structures: to use data efficiently
             -Can NOT be multi-dimensional
             -ready methods
 
+--CAN NOR CREATE OBJECTS FROM INTERFACES (need to use classes)
+           2.1 List:
+           -- Allow Duplicates
+           -- Random access
+           -- Has index
+
+           2.1.1 Array List:
+           -- Array Based Class,
+           -- searching elements faster
+
+           2.1.2 Linked list:
+           -- node based class(doubly linked list)/each element has pointer for next and previous
+           -- adding and removing elements faster
+
+
+           2.1.3 Vector;
+            --Array Based Class(internally uses array)
+            --Slower/Synchronized (one thread at the time in multi threading environment)
+
+
+
+            2.1.3.1 Stack:
+            --Array Based Class(internally uses array)
+            --Slower/ Synchronized (one thread at the time in multi threading environment)
+            -- special order LIFO (pop())
+
+           2.2 Set:
+           --Does not allow duplicates
+           --Does not have index
+
+           2.2.1 HashSet
+            -- No duplicates
+            -- Random order
+            --Faster
+            -- accept null keyword
+
+            2.2.1.1 LinkedHashSet: child of the hashSet
+              --Insertion Order(keep same order)
+              -- accept null keyword
+
+            2.2.3 TreeSet:
+            --sorted order
+            --does not accept NULL
+            -- compare values (existing object)
+
+
+           2.3 Queue:
+           -- All Duplicates
+           -- Does not have index
+           -- special order FIFO(pull())
+
+           2.3.1 Priority queue:
+             --Random Order
+            --does not accept null
+
+
+           2.3.2 ArrayDequeue:
+             --Insertion Order
+             --does not accept null
+
+
+           2.3.3 LinkedList:
+             --Insertion order
+             --Has Index
+             --accepts null
+
+
+
+
         3. Map:
-        -Map is Collections OF pairs(key and values) Entry
+        --Map is Collections OF pairs(key and values) Entry
                -size is dynamic
                -supports non-primitive data types ONLY
                -Can NOT be multi-dimensional
                -ready methods
+           KEY MUST BE UNIQUE
 
-   Java is not 100% object oriented
+           3.1 hashMap: Random Order
+                3.1.1 LinkedHashMap: insertion order
+
+           3.2 TreeMap: Sorted order, Key can not be null
+
+           3.3 HashTable : Random order, synchronized
+                           --both key and value can NOT be null
+
+
+   Java is not 100% object oriented// because of primitive data// enum
