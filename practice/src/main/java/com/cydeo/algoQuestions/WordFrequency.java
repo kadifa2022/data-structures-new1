@@ -16,7 +16,7 @@ public class WordFrequency {
         String text= "Ann while Bob had   had had    had had a    better     effect on on the teacher";
         Map<String, Integer> freqMap = new HashMap<>();
 
-        asList(text.split(" +")).forEach(s ->{
+        asList(text.split(" + ")).forEach(s ->{
             if(freqMap.containsKey(s)){
                 Integer count= freqMap.get(s);
                 freqMap.put(s, count+1);
