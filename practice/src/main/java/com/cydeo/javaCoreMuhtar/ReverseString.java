@@ -8,17 +8,23 @@ public class ReverseString {
         //write your code here
 
         //first thing we are declaring reversed string and assigning empty string to store reversed version of string
-        String reversedStr="";
+        String reversedStr = "";
 
         //second get each element from string(for loop) and concat
-        for(int i = str.length()-1 ; i >= 0; i--){
-           reversedStr += str.charAt(i);
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversedStr += str.charAt(i);
         }
         System.out.println(reversedStr);
 
 
+        String str1 = "Java programing language";
 
+        String reverseString = "";
 
+        for (int i = str1.length() - 1; i >= 0; i--) {
+            reverseString += str1.charAt(i);
+        }
+        System.out.println(reverseString);
 
     }
 }

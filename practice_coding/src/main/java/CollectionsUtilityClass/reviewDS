@@ -24,7 +24,7 @@ Data Structures: to use data efficiently
             -Can NOT be multi-dimensional
             -ready methods
 
---CAN NOR CREATE OBJECTS FROM INTERFACES (need to use classes)
+--CAN NOT CREATE OBJECTS FROM INTERFACES (need to use classes)
            2.1 List:
            -- Allow Duplicates
            -- Random access
